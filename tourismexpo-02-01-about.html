@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Отдых</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Flex:opsz,wdth,wght@8..144,120,680&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="js/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="js/air-datepicker/datepicker.css">
+        <link rel="stylesheet" href="js/select2/select2.css">
+
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width">
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+
+            <!-- wrapper inner -->
+            <div class="wrapper-inner">
+
+                <header>
+                    <div class="container">
+                        <div class="header-container">
+                            <div class="logo">
+                                <a href="#">
+                                    <img src="images/logo.svg" alt="">
+                                    <svg><use xlink:href="images/sprite.svg#logo-title"></use></svg>
+                                </a>
+                            </div>
+
+                            <div class="header-right">
+                                <div class="header-search">
+                                    <a href="#" class="header-search-link"><svg><use xlink:href="images/sprite.svg#icon-search"></use></svg></a>
+                                </div>
+                                <div class="header-favourite">
+                                    <a href="#" class="header-favourite-link"><svg><use xlink:href="images/sprite.svg#icon-favourite"></use></svg></a>
+                                </div>
+                                <div class="header-lang"><a href="#">RU</a> / EN</div>
+                                <a href="#" class="menu-mobile-link"><svg><use xlink:href="images/sprite.svg#menu-mobile-link"></use></svg><svg><use xlink:href="images/sprite.svg#menu-mobile-close"></use></svg></a>
+                            </div>
+
+                            <nav class="nav">
+                                <ul>
+                                    <li class="active">
+                                        <a href="#">Выставка<svg><use xlink:href="images/sprite.svg#nav-arrow"></use></svg></a>
+                                        <ul>
+                                            <li class="active"><a href="#">О выставке</a></li>
+                                            <li><a href="#">Площадка</a></li>
+                                            <li><a href="#">Online-каталог</a></li>
+                                            <li><a href="#">Архив</a></li>
+                                            <li><a href="#">Контакты</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Участникам<svg><use xlink:href="images/sprite.svg#nav-arrow"></use></svg></a>
+                                        <ul>
+                                            <li><a href="#">Участие в выставке</a></li>
+                                            <li><a href="#">Руководство участника</a></li>
+                                            <li><a href="#">Партнерам</a></li>
+                                            <li><a href="#">Стенды</a></li>
+                                            <li><a href="#">Туристические сервисы</a></li>
+                                            <li><a href="#">F.A.Q.</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Посетителям<svg><use xlink:href="images/sprite.svg#nav-arrow"></use></svg></a>
+                                        <ul>
+                                            <li><a href="#">Гид посетителя</a></li>
+                                            <li><a href="#">Регистрация посетителя<svg><use xlink:href="images/sprite.svg#ext-link"></use></svg></a></li>
+                                            <li><a href="#">Туристические сервисы</a></li>
+                                            <li><a href="#">Аккредитация прессы<svg><use xlink:href="images/sprite.svg#ext-link"></use></svg></a></li>
+                                            <li><a href="#">F.A.Q.</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Программа<svg><use xlink:href="images/sprite.svg#nav-arrow"></use></svg></a>
+                                        <ul>
+                                            <li><a href="#">Программа мероприятий</a></li>
+                                            <li><a href="#">Спикеры</a></li>
+                                            <li><a href="#">Мероприятия экспонентов</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Медиа<svg><use xlink:href="images/sprite.svg#nav-arrow"></use></svg></a>
+                                        <ul>
+                                            <li><a href="#">Новости</a></li>
+                                            <li><a href="#">Аккредитация прессы<svg><use xlink:href="images/sprite.svg#ext-link"></use></svg></a></li>
+                                            <li><a href="#">Фото и видео</a></li>
+                                            <li><a href="#">Медиаматериалы</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                            <div class="header-place">
+                                <div class="header-place-item"><svg><use xlink:href="images/sprite.svg#icon-date"></use></svg>17-19 сентября 2024 года</div>
+                                <div class="header-place-item"><svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>Москва, ЦВК «Экспоцентр»</div>
+                            </div>
+
+                            <div class="header-btns">
+                                <a href="#" class="btn btn-small btn-border"><span>Посетить выставку<svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg></span></a>
+                                <a href="#" class="btn btn-small"><span>Стать экспонентом<svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- page top -->
+                <div class="page-top">
+                    <div class="page-top-bg" style="background-image:url(images/page-top-about.jpg)"></div>
+                    <div class="container">
+                        <div class="section-menu">
+                            <ul>
+                                <li class="active"><a href="#">О выставке</a></li>
+                                <li><a href="#">Площадка</a></li>
+                                <li><a href="#">Online-каталог</a></li>
+                                <li><a href="#">Архив</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="breadcrumbs"><a href="#">отдых</a> / <a href="#">Выставка</a> / О выставке</div>
+                        <h1 class="display">О выставке</h1>
+                    </div>
+                </div>
+                <!-- page top END -->
+
+                <!-- container -->
+                <div class="container">
+
+                    <div class="about-manifest">
+                        <div class="main-title">30&nbsp;лет путешествуем вместе!</div>
+                        <div class="main-anonce">
+                            <p>На&nbsp;протяжении 30&nbsp;лет ОТДЫХ Leisure&nbsp;&mdash; единственное деловое мероприятие в&nbsp;России такого масштаба перед осенне-зимним туристическим сезоном. Форум-выставка&nbsp;&mdash; место, где министры встречаются с&nbsp;бизнесом для согласования планов, место, где туристические команды со&nbsp;всего мира налаживают отношений и&nbsp;куда приезжают лучшие профессионалы и&nbsp;эксперты туротрасли, чтобы делать открытия и&nbsp;вести бизнес.</p>
+                            <p>Займите свое место на&nbsp;одном из&nbsp;самых влиятельных в&nbsp;России мероприятии в&nbsp;сфере путешествий и&nbsp;туризма. Мы&nbsp;знаем, что путешествия способны изменить мир. Давайте менять его вместе и&nbsp;к&nbsp;лучшему.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- container END -->
+
+                <div class="about-info">
+                    <div class="about-info-item about-info-item-dates">
+                        <div class="about-info-item-bg" style="background-image:url(images/about-info-dates.jpg)"></div>
+                        <div class="about-info-item-content">
+                            <div class="about-info-item-icon"><svg><use xlink:href="images/sprite.svg#about-icon-dates"></use></svg></div>
+                            <h3>Даты проведения</h3>
+                            <div class="about-info-item-title">17-19 сентября 2024 года</div>
+                            <div class="about-info-item-notice">с 10:00 до 16:00</div>
+                        </div>
+                    </div>
+                    <div class="about-info-item about-info-item-place">
+                        <div class="about-info-item-bg" style="background-image:url(images/about-info-place.jpg)"></div>
+                        <div class="about-info-item-content">
+                            <div class="about-info-item-icon"><svg><use xlink:href="images/sprite.svg#about-icon-location"></use></svg></div>
+                            <h3>Место проведения</h3>
+                            <div class="about-info-item-title">Москва, ЦВК «Экспоцентр»</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- container -->
+                <div class="container">
+
+                    <div class="about-digits">
+                        <h2>ОТДЫХ Leisure 2023 в&nbsp;цифрах</h2>
+                        <div class="about-digits-content">
+                            <div class="about-digits-list">
+                                <div class="about-digits-item">
+                                    <div class="about-digits-item-value">9500</div>
+                                    <div class="about-digits-item-text">Посетителей в&nbsp;офлайн</div>
+                                </div>
+                                <div class="about-digits-item">
+                                    <div class="about-digits-item-value">51</div>
+                                    <div class="about-digits-item-text">Страна мира</div>
+                                </div>
+                                <div class="about-digits-item">
+                                    <div class="about-digits-item-value">67</div>
+                                    <div class="about-digits-item-text">Регионов России</div>
+                                </div>
+                                <div class="about-digits-item">
+                                    <div class="about-digits-item-value">1000</div>
+                                    <div class="about-digits-item-text">Зрителей онлайн</div>
+                                </div>
+                                <div class="about-digits-item">
+                                    <div class="about-digits-item-value">186</div>
+                                    <div class="about-digits-item-text">Ведущих спикеров деловой программы</div>
+                                </div>
+                                <div class="about-digits-item">
+                                    <div class="about-digits-item-value">100+</div>
+                                    <div class="about-digits-item-text">Представители СМИ</div>
+                                </div>
+                                <div class="about-digits-item">
+                                    <div class="about-digits-item-value">34</div>
+                                    <div class="about-digits-item-text">Трека деловой программы</div>
+                                </div>
+                                <div class="about-digits-item">
+                                    <div class="about-digits-item-value">2800</div>
+                                    <div class="about-digits-item-text">Человек посетили деловую программу</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-digits-download"><a href="#" class="btn"><span><svg><use xlink:href="images/sprite.svg#btn-download"></use></svg>Все цифры</span></a></div>
+                    </div>
+
+                    <div class="about-sections">
+                        <h2>Тематические разделы</h2>
+                        <div class="about-sections-list">
+                            <div class="about-sections-item">
+                                <div class="about-sections-item-inner">
+                                    <div class="about-sections-item-number">01</div>
+                                    <div class="about-sections-item-title">Национальные офисы по&nbsp;туризму зарубежных стран</div>
+                                </div>
+                            </div>
+                            <div class="about-sections-item">
+                                <div class="about-sections-item-inner">
+                                    <div class="about-sections-item-number">02</div>
+                                    <div class="about-sections-item-title">Региональные органы управления туризмом&nbsp;РФ</div>
+                                </div>
+                            </div>
+                            <div class="about-sections-item">
+                                <div class="about-sections-item-inner">
+                                    <div class="about-sections-item-number">03</div>
+                                    <div class="about-sections-item-title">Туроператоры и&nbsp;DMC компании</div>
+                                </div>
+                            </div>
+                            <div class="about-sections-item">
+                                <div class="about-sections-item-inner">
+                                    <div class="about-sections-item-number">04</div>
+                                    <div class="about-sections-item-title">Туристические агентства</div>
+                                </div>
+                            </div>
+                            <div class="about-sections-item">
+                                <div class="about-sections-item-inner">
+                                    <div class="about-sections-item-number">05</div>
+                                    <div class="about-sections-item-title">Отели и&nbsp;объекты размещения</div>
+                                </div>
+                            </div>
+                            <div class="about-sections-item">
+                                <div class="about-sections-item-inner">
+                                    <div class="about-sections-item-number">06</div>
+                                    <div class="about-sections-item-title">IT-решения для туриндустрии</div>
+                                </div>
+                            </div>
+                            <div class="about-sections-item">
+                                <div class="about-sections-item-inner">
+                                    <div class="about-sections-item-number">07</div>
+                                    <div class="about-sections-item-title">Деловой туризм&nbsp;/ MICE</div>
+                                </div>
+                            </div>
+                            <div class="about-sections-item">
+                                <div class="about-sections-item-inner">
+                                    <div class="about-sections-item-number">08</div>
+                                    <div class="about-sections-item-title">Музеи и&nbsp;парки</div>
+                                </div>
+                            </div>
+                            <div class="about-sections-item">
+                                <div class="about-sections-item-inner">
+                                    <div class="about-sections-item-number">09</div>
+                                    <div class="about-sections-item-title">Индустрия развлечений</div>
+                                </div>
+                            </div>
+                            <div class="about-sections-item">
+                                <div class="about-sections-item-inner">
+                                    <div class="about-sections-item-number">10</div>
+                                    <div class="about-sections-item-title">Глэмпинги, автокемпинги</div>
+                                </div>
+                            </div>
+                            <div class="about-sections-item">
+                                <div class="about-sections-item-inner">
+                                    <div class="about-sections-item-number">11</div>
+                                    <div class="about-sections-item-title">Медицинский и&nbsp;оздорови&shy;тельный туризм</div>
+                                </div>
+                            </div>
+                            <div class="about-sections-item">
+                                <div class="about-sections-item-inner">
+                                    <div class="about-sections-item-number">12</div>
+                                    <div class="about-sections-item-title">Сервис и&nbsp;транспорт</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-org">
+                        <h2>Организатор</h2>
+                        <div class="about-org-content">
+                            <p>Группа &laquo;ЕВРОЭКСПО&raquo; является одной из&nbsp;крупнейших в&nbsp;сфере конгрессно-выставочного бизнеса.</p>
+                            <p>Более 29&nbsp;лет мы&nbsp;работаем на&nbsp;рынке конгрессно-выставочных услуг &laquo;полного цикла&raquo; и&nbsp;специализируемся на&nbsp;организации разнопрофильных отраслевых выставок и&nbsp;форумов, располагая собственным производством, сертифицированным в&nbsp;соответствии со&nbsp;стандартами СРО и&nbsp;ISO. Какими&nbsp;бы ни&nbsp;были состояние конгрессно-выставочного рынка и&nbsp;приоритеты развития отрасли, многие наши проекты проходят ежегодно, начиная с&nbsp;1995&nbsp;года.</p>
+                            <div class="about-org-logo"><img src="files/about-org-logo.png" alt=""></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- container END -->
+
+            </div>
+            <!-- wrapper inner END -->
+
+            <!-- partners -->
+            <div class="partners">
+                <div class="container">
+
+                    <!-- partners section -->
+                    <div class="partners-section">
+                        <div class="partners-section-header">
+                            <h3>Официальная поддержка</h3>
+                            <div class="partners-section-header-ctrl">
+                                <a href="#" class="partners-section-prev"><svg><use xlink:href="images/sprite.svg#arrow-prev"></use></svg></a>
+                                <a href="#" class="partners-section-next"><svg><use xlink:href="images/sprite.svg#arrow-next"></use></svg></a>
+                            </div>
+                        </div>
+
+                        <div class="partners-list swiper">
+                            <div class="partners-list-container swiper-wrapper">
+                                <div class="partners-item swiper-slide">
+                                    <a href="#">
+                                        <div class="partners-item-logo"><img src="files/partners-01.png" alt=""></div>
+                                        <div class="partners-item-title">Правительство Российской Федерации</div>
+                                        <div class="partners-item-link">Приветствие заместителя Председателя Правительства Российской Федерации Дмитрия Николаевича Чернышенко</div>
+                                    </a>
+                                </div>
+                                <div class="partners-item swiper-slide">
+                                    <a href="#">
+                                        <div class="partners-item-logo"><img src="files/partners-02.png" alt=""></div>
+                                        <div class="partners-item-title">Российский союз туриндустрии</div>
+                                        <div class="partners-item-link">Приветствие Президента Российского союза туриндустрии Ильи Геннадьевича Уманского</div>
+                                    </a>
+                                </div>
+                                <div class="partners-item swiper-slide">
+                                    <a href="#">
+                                        <div class="partners-item-logo"><img src="files/partners-03.png" alt=""></div>
+                                        <div class="partners-item-title">Правительство Российской Федерации</div>
+                                        <div class="partners-item-link">Приветствие заместителя Председателя Правительства Российской Федерации Дмитрия Николаевича Чернышенко</div>
+                                    </a>
+                                </div>
+                                <div class="partners-item swiper-slide">
+                                    <a href="#">
+                                        <div class="partners-item-logo"><img src="files/partners-04.png" alt=""></div>
+                                        <div class="partners-item-title">Правительство Российской Федерации</div>
+                                        <div class="partners-item-link">Приветствие заместителя Председателя Правительства Российской Федерации Дмитрия Николаевича Чернышенко</div>
+                                    </a>
+                                </div>
+                                <div class="partners-item swiper-slide">
+                                    <a href="#">
+                                        <div class="partners-item-logo"><img src="files/partners-02.png" alt=""></div>
+                                        <div class="partners-item-title">Российский союз туриндустрии</div>
+                                        <div class="partners-item-link">Приветствие Президента Российского союза туриндустрии Ильи Геннадьевича Уманского</div>
+                                    </a>
+                                </div>
+                                <div class="partners-item swiper-slide">
+                                    <a href="#">
+                                        <div class="partners-item-logo"><img src="files/partners-04.png" alt=""></div>
+                                        <div class="partners-item-title">Правительство Российской Федерации</div>
+                                        <div class="partners-item-link">Приветствие заместителя Председателя Правительства Российской Федерации Дмитрия Николаевича Чернышенко</div>
+                                    </a>
+                                </div>
+                                <div class="partners-item swiper-slide">
+                                    <a href="#">
+                                        <div class="partners-item-logo"><img src="files/partners-03.png" alt=""></div>
+                                        <div class="partners-item-title">Правительство Российской Федерации</div>
+                                        <div class="partners-item-link">Приветствие заместителя Председателя Правительства Российской Федерации Дмитрия Николаевича Чернышенко</div>
+                                    </a>
+                                </div>
+                                <div class="partners-item swiper-slide">
+                                    <a href="#">
+                                        <div class="partners-item-logo"><img src="files/partners-02.png" alt=""></div>
+                                        <div class="partners-item-title">Российский союз туриндустрии</div>
+                                        <div class="partners-item-link">Приветствие Президента Российского союза туриндустрии Ильи Геннадьевича Уманского</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- partners section END -->
+
+                    <!-- partners section -->
+                    <div class="partners-section">
+                        <div class="partners-section-header">
+                            <h3>Партнеры и спонсоры</h3>
+                            <div class="partners-section-header-ctrl">
+                                <a href="#" class="partners-section-prev"><svg><use xlink:href="images/sprite.svg#arrow-prev"></use></svg></a>
+                                <a href="#" class="partners-section-next"><svg><use xlink:href="images/sprite.svg#arrow-next"></use></svg></a>
+                            </div>
+                        </div>
+
+                        <div class="partners-list swiper">
+                            <div class="partners-list-container swiper-wrapper">
+                                <div class="partners-item swiper-slide">
+                                    <a href="#">
+                                        <div class="partners-item-logo"><img src="files/partners-05.png" alt=""></div>
+                                        <div class="partners-item-title">Ассоциация туроператоров</div>
+                                        <div class="partners-item-text">Официальный партнер выставки</div>
+                                    </a>
+                                </div>
+                                <div class="partners-item swiper-slide">
+                                    <a href="#">
+                                        <div class="partners-item-logo"><img src="files/partners-06.png" alt=""></div>
+                                        <div class="partners-item-title">Московская торгово-промышленная палата</div>
+                                        <div class="partners-item-text">Официальный партнер выставки</div>
+                                    </a>
+                                </div>
+                                <div class="partners-item swiper-slide">
+                                    <a href="#">
+                                        <div class="partners-item-logo"><img src="files/partners-07.png" alt=""></div>
+                                        <div class="partners-item-title">Ассоциация туроператоров</div>
+                                        <div class="partners-item-text">Официальный партнер выставки</div>
+                                    </a>
+                                </div>
+                                <div class="partners-item swiper-slide">
+                                    <a href="#">
+                                        <div class="partners-item-logo"><img src="files/partners-08.png" alt=""></div>
+                                        <div class="partners-item-title">Московская торгово-промышленная палата</div>
+                                        <div class="partners-item-text">Официальный партнер выставки</div>
+                                    </a>
+                                </div>
+                                <div class="partners-item swiper-slide">
+                                    <a href="#">
+                                        <div class="partners-item-logo"><img src="files/partners-05.png" alt=""></div>
+                                        <div class="partners-item-title">Ассоциация туроператоров</div>
+                                        <div class="partners-item-text">Официальный партнер выставки</div>
+                                    </a>
+                                </div>
+                                <div class="partners-item swiper-slide">
+                                    <a href="#">
+                                        <div class="partners-item-logo"><img src="files/partners-08.png" alt=""></div>
+                                        <div class="partners-item-title">Московская торгово-промышленная палата</div>
+                                        <div class="partners-item-text">Официальный партнер выставки</div>
+                                    </a>
+                                </div>
+                                <div class="partners-item swiper-slide">
+                                    <a href="#">
+                                        <div class="partners-item-logo"><img src="files/partners-07.png" alt=""></div>
+                                        <div class="partners-item-title">Ассоциация туроператоров</div>
+                                        <div class="partners-item-text">Официальный партнер выставки</div>
+                                    </a>
+                                </div>
+                                <div class="partners-item swiper-slide">
+                                    <a href="#">
+                                        <div class="partners-item-logo"><img src="files/partners-06.png" alt=""></div>
+                                        <div class="partners-item-title">Московская торгово-промышленная палата</div>
+                                        <div class="partners-item-text">Официальный партнер выставки</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- partners section END -->
+
+                </div>
+            </div>
+            <!-- partners END -->
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-container">
+                        <div class="footer-left">
+                            <div class="footer-logo">
+                                <img src="images/logo.svg" alt="">
+                                <svg><use xlink:href="images/sprite.svg#logo-title"></use></svg>
+                            </div>
+                            <div class="footer-social">
+                                <a href="#" target="_blank" class="footer-social-telegram"><svg><use xlink:href="images/sprite.svg#footer-social-telegram"></use></svg></a>
+                                <a href="#" target="_blank" class="footer-social-vk"><svg><use xlink:href="images/sprite.svg#footer-social-vk"></use></svg></a>
+                            </div>
+                            <div class="footer-org">
+                                <a href="#" target="_blank"><img src="images/euroexpo.png" alt=""><span>Организатор выставки&nbsp;&mdash; компания &laquo;Евроэкспо&raquo;</span></a>
+                            </div>
+                        </div>
+
+                        <div class="footer-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">Выставка</a>
+                                    <ul>
+                                        <li><a href="#">О выставке</a></li>
+                                        <li><a href="#">Площадка</a></li>
+                                        <li><a href="#">Online-каталог</a></li>
+                                        <li><a href="#">Архив</a></li>
+                                        <li><a href="#">Контакты</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Участникам</a>
+                                    <ul>
+                                        <li><a href="#">Участие в выставке</a></li>
+                                        <li><a href="#">Руководство участника</a></li>
+                                        <li><a href="#">Партнерам</a></li>
+                                        <li><a href="#">Стенды</a></li>
+                                        <li><a href="#">Туристические сервисы</a></li>
+                                        <li><a href="#">F.A.Q.</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Посетителям</a>
+                                    <ul>
+                                        <li><a href="#">Гид посетителя</a></li>
+                                        <li><a href="#">Регистрация посетителя<svg><use xlink:href="images/sprite.svg#ext-link"></use></svg></a></li>
+                                        <li><a href="#">Туристические сервисы</a></li>
+                                        <li><a href="#">Аккредитация прессы<svg><use xlink:href="images/sprite.svg#ext-link"></use></svg></a></li>
+                                        <li><a href="#">F.A.Q.</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Программа</a>
+                                    <ul>
+                                        <li><a href="#">Программа мероприятий</a></li>
+                                        <li><a href="#">Спикеры</a></li>
+                                        <li><a href="#">Мероприятия экспонентов</a></li>
+                                    </ul>
+                                </li>
+                                <li class="active">
+                                    <a href="#">Медиа</a>
+                                    <ul>
+                                        <li class="active"><a href="#">Новости</a></li>
+                                        <li><a href="#">Аккредитация прессы<svg><use xlink:href="images/sprite.svg#ext-link"></use></svg></a></li>
+                                        <li><a href="#">Фото и видео</a></li>
+                                        <li><a href="#">Медиаматериалы</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="footer-copyrights">&copy;&nbsp;1995&mdash;2024 Международный форум-выставка по&nbsp;туризму ОТДЫХ LEISURE 2024 17-19 сентября 2024 года Москва, ЦВК &laquo;Экспоцентр&raquo;</div>
+                        <div class="footer-policy">Политика ООО &laquo;Евроэкспо&raquo; в&nbsp;отношении обработки персональных данных</div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+        <!-- wrapper END -->
+
+        <script>
+            var pathTemplate = './';
+        </script>
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/swiper/swiper-bundle.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/air-datepicker/datepicker.min.js"></script>
+        <script src="js/select2/select2.min.js"></script>
+        <script src="js/select2/ru.js"></script>
+        <script src="js/tools.js"></script>
+
+    </body>
+</html>

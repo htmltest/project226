@@ -9,12 +9,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Flex:opsz,wdth,wght@8..144,120,680&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="js/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="js/air-datepicker/datepicker.css">
+        <link rel="stylesheet" href="js/select2/select2.css">
 
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width">
     </head>
 
-    <body>
+    <body class="page-main">
 
         <!-- wrapper -->
         <div class="wrapper">
@@ -95,7 +97,7 @@
                             </nav>
 
                             <div class="header-place">
-                                <div class="header-place-item"><svg><use xlink:href="images/sprite.svg#icon-date"></use></svg>17-18 сентября 2024 года</div>
+                                <div class="header-place-item"><svg><use xlink:href="images/sprite.svg#icon-date"></use></svg>17-19 сентября 2024 года</div>
                                 <div class="header-place-item"><svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>Москва, ЦВК «Экспоцентр»</div>
                             </div>
 
@@ -107,13 +109,121 @@
                     </div>
                 </header>
 
+                <!-- slider -->
+                <div class="slider swiper">
+                    <div class="slider-container swiper-wrapper">
+                        <div class="slider-item swiper-slide">
+                            <div class="slider-item-inner">
+                                <div class="slider-item-bg" style="background-image:url(files/slider-1.jpg)"></div>
+                                <div class="slider-item-content">
+                                    <div class="container">
+                                        <div class="slider-item-title">30-й международный форум-выставка по&nbsp;туризму</div>
+                                        <div class="slider-item-link"><a href="#" class="btn btn-border"><span>Посмотреть программу<svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg></span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slider-item swiper-slide">
+                            <div class="slider-item-inner">
+                                <div class="slider-item-bg" style="background-image:url(files/slider-1.jpg)"></div>
+                                <div class="slider-item-content">
+                                    <div class="container">
+                                        <div class="slider-item-title">30-й международный форум-выставка по&nbsp;туризму</div>
+                                        <div class="slider-item-link"><a href="#" class="btn btn-border"><span>Посмотреть программу<svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg></span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slider-item swiper-slide">
+                            <div class="slider-item-inner">
+                                <div class="slider-item-bg" style="background-image:url(files/slider-1.jpg)"></div>
+                                <div class="slider-item-content">
+                                    <div class="container">
+                                        <div class="slider-item-title">30-й международный форум-выставка по&nbsp;туризму</div>
+                                        <div class="slider-item-link"><a href="#" class="btn btn-border"><span>Посмотреть программу<svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg></span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slider-item swiper-slide">
+                            <div class="slider-item-inner">
+                                <div class="slider-item-bg" style="background-image:url(files/slider-1.jpg)"></div>
+                                <div class="slider-item-content">
+                                    <div class="container">
+                                        <div class="slider-item-title">30-й международный форум-выставка по&nbsp;туризму</div>
+                                        <div class="slider-item-link"><a href="#" class="btn btn-border"><span>Посмотреть программу<svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg></span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"><svg><use xlink:href="images/sprite.svg#slider-prev"></use></svg></div>
+                    <div class="swiper-button-next"><svg><use xlink:href="images/sprite.svg#slider-next"></use></svg></div>
+                </div>
+                <!-- slider END -->
+
+                <!-- main sections -->
+                <div class="main-sections">
+                    <div class="container">
+                        <div class="main-title">Форум-выставка ОТДЫХ Leisure:<br> 30&nbsp;лет путешествуем вместе!</div>
+                        <div class="main-anonce">
+                            <p>ОТДЫХ Leisure&nbsp;&mdash; главный старт осенне-зимнего сезона туристической отрасли в&nbsp;России. Это единственное деловое мероприятие такого масштаба для выездного, въездного и&nbsp;внутреннего туризма.</p>
+                            <p>ОТДЫХ Leisure объединяет более 10&nbsp;000 профессионалов отрасли: от&nbsp;представителей малого и&nbsp;среднего предпринимательства в&nbsp;сфере туризма до&nbsp;руководителей крупных российских и&nbsp;зарубежных компаний, а&nbsp;также ЛПР, отвечающих за&nbsp;развитие отдельных территорий и&nbsp;туристических направлений.</p>
+                        </div>
+                    </div>
+                    <div class="main-sections-content">
+                        <div class="container">
+                            <div class="main-sections-container">
+                                <div class="main-sections-group">
+                                    <div class="main-sections-item main-sections-item-1">
+                                        <div class="main-sections-item-content">
+                                            <div class="main-sections-item-title">Посетителям<svg><use xlink:href="images/sprite.svg#main-sections-item-title"></use></svg></div>
+                                            <div class="main-sections-item-text">Будьте готовы к&nbsp;посещению ОТДЫХ Leisure в&nbsp;Москве на&nbsp;все 100%. Все посетители будут иметь доступ все три дня. Установите свои цели!</div>
+                                        </div>
+                                        <div class="main-sections-item-ctrl">
+                                            <a href="#" class="btn btn-small"><span>Регистрация посетителя<svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg></span></a>
+                                            <a href="#" class="btn btn-small btn-border"><span>Гид посетителя<svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="main-sections-item main-sections-item-2">
+                                        <div class="main-sections-item-content">
+                                            <div class="main-sections-item-title">Участникам<svg><use xlink:href="images/sprite.svg#main-sections-item-title"></use></svg></div>
+                                            <div class="main-sections-item-text">Найти новые направления, места путешествий и&nbsp;новые туристические продукты для своих клиентов.</div>
+                                        </div>
+                                        <div class="main-sections-item-ctrl">
+                                            <a href="#" class="btn btn-small"><span>Заявка на участие<svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg></span></a>
+                                            <a href="#" class="btn btn-small btn-border"><span>Об участии<svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-sections-item main-sections-item-3">
+                                    <div class="main-sections-item-content">
+                                        <div class="main-sections-item-title">Горячие ссылки<svg><use xlink:href="images/sprite.svg#main-sections-item-title"></use></svg></div>
+                                    </div>
+                                    <div class="main-sections-item-links">
+                                        <div class="main-sections-item-link"><a href="#" class="btn btn-small btn-border"><span>Партнерам<svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg></span></a></div>
+                                        <div class="main-sections-item-link"><a href="#" class="btn btn-small btn-border"><span>Программа мероприятий<svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg></span></a></div>
+                                        <div class="main-sections-item-link"><a href="#" class="btn btn-small btn-border"><span>Мероприятия экспонентов<svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg></span></a></div>
+                                        <div class="main-sections-item-link"><a href="#" class="btn btn-small btn-border"><span>Туристические сервисы<svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg></span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- main sections END -->
+
                 <!-- container -->
                 <div class="container">
 
                     <!-- main events -->
                     <div class="main-events">
                         <div class="main-title">События вокруг выставки</div>
-                        <div class="main-anonce">Эксклюзивные форматы участия в&nbsp;деловой программе, включая возможность организовать</div>
+                        <div class="main-anonce">Изучайте последние новости о&nbsp;Международном форуме-выставке по&nbsp;туризму, что нового, интересного и&nbsp;сногсшибательного вас ждет на&nbsp;нашем мероприятии.</div>
                         <div class="main-events-social">
                             <a href="#" target="_blank" class="main-events-social-telegram"><svg><use xlink:href="images/sprite.svg#footer-social-telegram"></use></svg></a>
                             <a href="#" target="_blank" class="main-events-social-vk"><svg><use xlink:href="images/sprite.svg#footer-social-vk"></use></svg></a>
@@ -188,7 +298,7 @@
                     <!-- main program -->
                     <div class="main-program">
                         <div class="main-title">Программа мероприятий</div>
-                        <div class="main-anonce">Эксклюзивные форматы участия в&nbsp;деловой программе, включая возможность организовать</div>
+                        <div class="main-anonce">Присоединяйтесь к&nbsp;ведущим спикерам и&nbsp;экспертам туристической и&nbsp;смежных индустрий, которые делятся своими знаниями, вдохновением и&nbsp;опытом! Оставаясь в&nbsp;курсе и&nbsp;используя эти идеи, вы&nbsp;сможете принимать обоснованные решения, внедрять инновации и&nbsp;делать успешный бизнес в&nbsp;сфере путешествий.</div>
 
                     </div>
                     <!-- main program END -->
@@ -196,7 +306,7 @@
                     <!-- main speakers -->
                     <div class="main-speakers">
                         <div class="main-title">Спикеры выставки</div>
-                        <div class="main-anonce">Эксклюзивные форматы участия в&nbsp;деловой программе, включая возможность организовать</div>
+                        <div class="main-anonce">Живые семинары, конференции, обучающие программы будут проходить все три дня ОТДЫХ Leisure 2024&nbsp;с участием ведущих спикеров и&nbsp;экспертов туротрасли.</div>
 
                         <!-- speakers -->
                         <div class="speakers">
@@ -509,7 +619,7 @@
                         </div>
                     </div>
                     <div class="footer-bottom">
-                        <div class="footer-copyrights">&copy;&nbsp;1995&mdash;2023Международный форум-выставка по&nbsp;туризму ОТДЫХ LEISURE 202417-19 сентября 2024Москва, ЦВК &laquo;Экспоцентр&raquo;</div>
+                        <div class="footer-copyrights">&copy;&nbsp;1995&mdash;2024 Международный форум-выставка по&nbsp;туризму ОТДЫХ LEISURE 2024 17-19 сентября 2024 года Москва, ЦВК &laquo;Экспоцентр&raquo;</div>
                         <div class="footer-policy">Политика ООО &laquo;Евроэкспо&raquo; в&nbsp;отношении обработки персональных данных</div>
                     </div>
                 </div>
@@ -524,6 +634,12 @@
 
         <script src="js/jquery-3.4.1.min.js"></script>
         <script src="js/swiper/swiper-bundle.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/air-datepicker/datepicker.min.js"></script>
+        <script src="js/select2/select2.min.js"></script>
+        <script src="js/select2/ru.js"></script>
         <script src="js/tools.js"></script>
 
     </body>
