@@ -36,7 +36,13 @@
 
                             <div class="header-right">
                                 <div class="header-search">
-                                    <a href="#" class="header-search-link"><svg><use xlink:href="images/sprite.svg#icon-search"></use></svg></a>
+                                    <a href="#" class="header-search-link"><svg><use xlink:href="images/sprite.svg#icon-search"></use></svg><svg><use xlink:href="images/sprite.svg#menu-mobile-close"></use></svg></a>
+                                    <div class="header-search-form">
+                                        <form action="#" method="post">
+                                            <div class="header-search-input"><input type="text" name="search" value="" placeholder="Поиск"></div>
+                                            <div class="header-search-submit"><button type="submit"><svg><use xlink:href="images/sprite.svg#icon-search"></use></svg></button></div>
+                                        </form>
+                                    </div>
                                 </div>
                                 <div class="header-favourite">
                                     <a href="#" class="header-favourite-link"><svg><use xlink:href="images/sprite.svg#icon-favourite"></use></svg></a>
@@ -105,7 +111,7 @@
 
                             <div class="header-btns">
                                 <a href="#" class="btn btn-small btn-border"><span>Посетить выставку<svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg></span></a>
-                                <a href="#" class="btn btn-small"><span>Стать экспонентом<svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg></span></a>
+                                <a href="windows/order.html" class="btn btn-small window-link"><span>Стать экспонентом<svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg></span></a>
                             </div>
                         </div>
                     </div>
@@ -292,60 +298,28 @@
                         <div class="partners-list swiper">
                             <div class="partners-list-container swiper-wrapper">
                                 <div class="partners-item swiper-slide">
-                                    <a href="#">
+                                    <div class="partners-item-inner">
                                         <div class="partners-item-logo"><img src="files/partners-01.png" alt=""></div>
-                                        <div class="partners-item-title">Правительство Российской Федерации</div>
-                                        <div class="partners-item-link">Приветствие заместителя Председателя Правительства Российской Федерации Дмитрия Николаевича Чернышенко</div>
-                                    </a>
+                                        <div class="partners-item-title">Ассоциация туроператоров России</div>
+                                    </div>
                                 </div>
                                 <div class="partners-item swiper-slide">
-                                    <a href="#">
+                                    <div class="partners-item-inner">
                                         <div class="partners-item-logo"><img src="files/partners-02.png" alt=""></div>
                                         <div class="partners-item-title">Российский союз туриндустрии</div>
-                                        <div class="partners-item-link">Приветствие Президента Российского союза туриндустрии Ильи Геннадьевича Уманского</div>
-                                    </a>
+                                    </div>
                                 </div>
                                 <div class="partners-item swiper-slide">
-                                    <a href="#">
+                                    <div class="partners-item-inner">
                                         <div class="partners-item-logo"><img src="files/partners-03.png" alt=""></div>
-                                        <div class="partners-item-title">Правительство Российской Федерации</div>
-                                        <div class="partners-item-link">Приветствие заместителя Председателя Правительства Российской Федерации Дмитрия Николаевича Чернышенко</div>
-                                    </a>
+                                        <div class="partners-item-title">Торгово-промышленная палата РФ</div>
+                                    </div>
                                 </div>
                                 <div class="partners-item swiper-slide">
-                                    <a href="#">
+                                    <div class="partners-item-inner">
                                         <div class="partners-item-logo"><img src="files/partners-04.png" alt=""></div>
-                                        <div class="partners-item-title">Правительство Российской Федерации</div>
-                                        <div class="partners-item-link">Приветствие заместителя Председателя Правительства Российской Федерации Дмитрия Николаевича Чернышенко</div>
-                                    </a>
-                                </div>
-                                <div class="partners-item swiper-slide">
-                                    <a href="#">
-                                        <div class="partners-item-logo"><img src="files/partners-02.png" alt=""></div>
-                                        <div class="partners-item-title">Российский союз туриндустрии</div>
-                                        <div class="partners-item-link">Приветствие Президента Российского союза туриндустрии Ильи Геннадьевича Уманского</div>
-                                    </a>
-                                </div>
-                                <div class="partners-item swiper-slide">
-                                    <a href="#">
-                                        <div class="partners-item-logo"><img src="files/partners-04.png" alt=""></div>
-                                        <div class="partners-item-title">Правительство Российской Федерации</div>
-                                        <div class="partners-item-link">Приветствие заместителя Председателя Правительства Российской Федерации Дмитрия Николаевича Чернышенко</div>
-                                    </a>
-                                </div>
-                                <div class="partners-item swiper-slide">
-                                    <a href="#">
-                                        <div class="partners-item-logo"><img src="files/partners-03.png" alt=""></div>
-                                        <div class="partners-item-title">Правительство Российской Федерации</div>
-                                        <div class="partners-item-link">Приветствие заместителя Председателя Правительства Российской Федерации Дмитрия Николаевича Чернышенко</div>
-                                    </a>
-                                </div>
-                                <div class="partners-item swiper-slide">
-                                    <a href="#">
-                                        <div class="partners-item-logo"><img src="files/partners-02.png" alt=""></div>
-                                        <div class="partners-item-title">Российский союз туриндустрии</div>
-                                        <div class="partners-item-link">Приветствие Президента Российского союза туриндустрии Ильи Геннадьевича Уманского</div>
-                                    </a>
+                                        <div class="partners-item-title">Русское географическое общество</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -365,59 +339,108 @@
                         <div class="partners-list swiper">
                             <div class="partners-list-container swiper-wrapper">
                                 <div class="partners-item swiper-slide">
-                                    <a href="#">
+                                    <a href="https://vipress.su/?erid=2RanykZCKLL" target="_blank">
                                         <div class="partners-item-logo"><img src="files/partners-05.png" alt=""></div>
-                                        <div class="partners-item-title">Ассоциация туроператоров</div>
-                                        <div class="partners-item-text">Официальный партнер выставки</div>
+                                        <div class="partners-item-title">Журнал &laquo;Живописная Россия&raquo;</div>
+                                        <div class="partners-item-text">Информационный партнер</div>
                                     </a>
                                 </div>
                                 <div class="partners-item swiper-slide">
-                                    <a href="#">
+                                    <a href="https://russiangid.ru/polyglott.html?erid=2RanykTGNCx" target="_blank">
                                         <div class="partners-item-logo"><img src="files/partners-06.png" alt=""></div>
-                                        <div class="partners-item-title">Московская торгово-промышленная палата</div>
-                                        <div class="partners-item-text">Официальный партнер выставки</div>
+                                        <div class="partners-item-title">Путеводитель &laquo;Русский гид&raquo;</div>
+                                        <div class="partners-item-text">Информационный партнер</div>
                                     </a>
                                 </div>
                                 <div class="partners-item swiper-slide">
-                                    <a href="#">
+                                    <a href="https://regruss.ru/?erid=2RanynUc9vQ" target="_blank">
                                         <div class="partners-item-logo"><img src="files/partners-07.png" alt=""></div>
-                                        <div class="partners-item-title">Ассоциация туроператоров</div>
-                                        <div class="partners-item-text">Официальный партнер выставки</div>
+                                        <div class="partners-item-title">Региональная Россия</div>
+                                        <div class="partners-item-text">Информационный партнер</div>
                                     </a>
                                 </div>
                                 <div class="partners-item swiper-slide">
-                                    <a href="#">
+                                    <a href="https://travelvesti.ru/?erid=2RanykhikWU" target="_blank">
                                         <div class="partners-item-logo"><img src="files/partners-08.png" alt=""></div>
-                                        <div class="partners-item-title">Московская торгово-промышленная палата</div>
+                                        <div class="partners-item-title">Вести Туризм</div>
+                                        <div class="partners-item-text">Мобильный пресс-центр</div>
+                                    </a>
+                                </div>
+                                <div class="partners-item swiper-slide">
+                                    <a href="https://travel.mts.ru/?utm_referrer=https%3A%2F%2Fwww.tourismexpo.ru%2F&erid=2Ranykp2C9n" target="_blank">
+                                        <div class="partners-item-logo"><img src="files/partners-09.png" alt=""></div>
+                                        <div class="partners-item-title">МТС Travel</div>
                                         <div class="partners-item-text">Официальный партнер выставки</div>
                                     </a>
                                 </div>
                                 <div class="partners-item swiper-slide">
-                                    <a href="#">
-                                        <div class="partners-item-logo"><img src="files/partners-05.png" alt=""></div>
-                                        <div class="partners-item-title">Ассоциация туроператоров</div>
-                                        <div class="partners-item-text">Официальный партнер выставки</div>
+                                    <a href="https://tourismthailand.ru/?erid=2RanynXWmkC" target="_blank">
+                                        <div class="partners-item-logo"><img src="files/partners-10.png" alt=""></div>
+                                        <div class="partners-item-title">Тайланд</div>
+                                        <div class="partners-item-text">Страна-партнер</div>
                                     </a>
                                 </div>
                                 <div class="partners-item swiper-slide">
-                                    <a href="#">
-                                        <div class="partners-item-logo"><img src="files/partners-08.png" alt=""></div>
-                                        <div class="partners-item-title">Московская торгово-промышленная палата</div>
-                                        <div class="partners-item-text">Официальный партнер выставки</div>
+                                    <a href="https://visit-kuzbass.ru/?erid=2RanykzQ78C" target="_blank">
+                                        <div class="partners-item-logo"><img src="files/partners-11.png" alt=""></div>
+                                        <div class="partners-item-title">Кузбасс</div>
+                                        <div class="partners-item-text">Регион-партнер</div>
                                     </a>
                                 </div>
                                 <div class="partners-item swiper-slide">
-                                    <a href="#">
-                                        <div class="partners-item-logo"><img src="files/partners-07.png" alt=""></div>
-                                        <div class="partners-item-title">Ассоциация туроператоров</div>
-                                        <div class="partners-item-text">Официальный партнер выставки</div>
+                                    <a href="https://spbcb.ru/?erid=2RanynxDg3a" target="_blank">
+                                        <div class="partners-item-logo"><img src="files/partners-12.png" alt=""></div>
+                                        <div class="partners-item-title">Санкт-Петербург</div>
+                                        <div class="partners-item-text">Город-партнер</div>
                                     </a>
                                 </div>
                                 <div class="partners-item swiper-slide">
-                                    <a href="#">
-                                        <div class="partners-item-logo"><img src="files/partners-06.png" alt=""></div>
-                                        <div class="partners-item-title">Московская торгово-промышленная палата</div>
-                                        <div class="partners-item-text">Официальный партнер выставки</div>
+                                    <a href="https://mgimo.travel/?erid=2RanymQ7udi" target="_blank">
+                                        <div class="partners-item-logo"><img src="files/partners-13.png" alt=""></div>
+                                        <div class="partners-item-title">МГИМО</div>
+                                        <div class="partners-item-text">Образовательный партнер</div>
+                                    </a>
+                                </div>
+                                <div class="partners-item swiper-slide">
+                                    <a href="https://maximahotels.ru/hotels/?erid=2RanymUZsUk" target="_blank">
+                                        <div class="partners-item-logo"><img src="files/partners-14.png" alt=""></div>
+                                        <div class="partners-item-title">Maxima Hotels</div>
+                                        <div class="partners-item-text">Отель-партнер</div>
+                                    </a>
+                                </div>
+                                <div class="partners-item swiper-slide">
+                                    <a href="https://www.travelline.ru/?erid=2RanymbyotU" target="_blank">
+                                        <div class="partners-item-logo"><img src="files/partners-15.png" alt=""></div>
+                                        <div class="partners-item-title">TravelLine</div>
+                                        <div class="partners-item-text">Партнер сессии деловой программы</div>
+                                    </a>
+                                </div>
+                                <div class="partners-item swiper-slide">
+                                    <a href="https://сетькреативноготуризма.рф/?erid=2Ranyo2fdtc" target="_blank">
+                                        <div class="partners-item-logo"><img src="files/partners-16.png" alt=""></div>
+                                        <div class="partners-item-title">Сеть Креативного Туризма</div>
+                                        <div class="partners-item-text">Экспертный партнер</div>
+                                    </a>
+                                </div>
+                                <div class="partners-item swiper-slide">
+                                    <a href="https://sletat.ru/" target="_blank">
+                                        <div class="partners-item-logo"><img src="files/partners-17.png" alt=""></div>
+                                        <div class="partners-item-title">Слетать.ру</div>
+                                        <div class="partners-item-text">Информационный партнер</div>
+                                    </a>
+                                </div>
+                                <div class="partners-item swiper-slide">
+                                    <a href="http://www.tourbus.ru/?erid=2RanykGtTEY" target="_blank">
+                                        <div class="partners-item-logo"><img src="files/partners-18.png" alt=""></div>
+                                        <div class="partners-item-title">Турбизнес</div>
+                                        <div class="partners-item-text">Информационный партнер</div>
+                                    </a>
+                                </div>
+                                <div class="partners-item swiper-slide">
+                                    <a href="https://rustur.ru/?erid=2RanykKrRoE" target="_blank">
+                                        <div class="partners-item-logo"><img src="files/partners-19.png" alt=""></div>
+                                        <div class="partners-item-title">Журнал &laquo;Отдых в&nbsp;России&raquo;</div>
+                                        <div class="partners-item-text">Информационный партнер</div>
                                     </a>
                                 </div>
                             </div>
@@ -521,6 +544,7 @@
         <script src="js/air-datepicker/datepicker.min.js"></script>
         <script src="js/select2/select2.min.js"></script>
         <script src="js/select2/ru.js"></script>
+        <script src="js/jquery.cookie.js"></script>
         <script src="js/tools.js"></script>
 
     </body>

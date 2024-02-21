@@ -30,14 +30,17 @@
     "data"  : [
         {
             "date"  : "17.09",
+            "day"   : "17 сентября",
             "events" : [
                 {
+                    "id"        : "01",
                     "start"     : "11:00",
                     "end"       : "11:30",
                     "hall"      : "Travel Arena",
                     "title"     : "ОТКРЫТИЕ ВЫСТАВКИ И ФОРУМА"
                 },
                 {
+                    "id"        : "02",
                     "start"     : "11:30",
                     "end"       : "13:00",
                     "hall"      : "Travel Arena",
@@ -48,6 +51,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "03",
                     "start"     : "11:30",
                     "end"       : "12:30",
                     "hall"      : "Мраморный зал",
@@ -57,6 +61,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "04",
                     "start"     : "13:15",
                     "end"       : "14:30",
                     "hall"      : "Мраморный зал",
@@ -67,6 +72,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "05",
                     "start"     : "13:30",
                     "end"       : "14:00",
                     "hall"      : "Cupola Arena",
@@ -75,6 +81,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "06",
                     "start"     : "14:30",
                     "end"       : "15:00",
                     "hall"      : "Cupola Arena",
@@ -85,6 +92,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "07",
                     "start"     : "13:30",
                     "end"       : "15:00",
                     "hall"      : "Travel Arena",
@@ -95,6 +103,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "08",
                     "start"     : "14:45",
                     "end"       : "16:15",
                     "hall"      : "Мраморный зал",
@@ -105,6 +114,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "09",
                     "start"     : "15:30",
                     "end"       : "17:00",
                     "hall"      : "Travel Arena",
@@ -115,6 +125,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "10",
                     "start"     : "15:30",
                     "end"       : "17:00",
                     "hall"      : "Cupola Arena",
@@ -125,6 +136,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "11",
                     "start"     : "16:30",
                     "end"       : "18:00",
                     "hall"      : "Мраморный зал",
@@ -139,8 +151,10 @@
 
         {
             "date"  : "18.09",
+            "day"   : "18 сентября",
             "events" : [
                 {
+                    "id"        : "12",
                     "start"     : "10:00",
                     "end"       : "10:20",
                     "hall"      : "Cupola Arena",
@@ -151,6 +165,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "13",
                     "start"     : "10:30",
                     "end"       : "12:00",
                     "hall"      : "Travel Arena",
@@ -159,6 +174,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "14",
                     "start"     : "10:30",
                     "end"       : "12:00",
                     "hall"      : "Мраморный зал",
@@ -169,6 +185,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "15",
                     "start"     : "10:30",
                     "end"       : "12:00",
                     "hall"      : "Южный зал",
@@ -179,6 +196,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "16",
                     "start"     : "10:35",
                     "end"       : "11:00",
                     "hall"      : "Cupola Arena",
@@ -189,6 +207,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "17",
                     "start"     : "11:15",
                     "end"       : "12:00",
                     "hall"      : "Cupola Arena",
@@ -199,6 +218,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "18",
                     "start"     : "12:30",
                     "end"       : "14:00",
                     "hall"      : "Travel Arena",
@@ -207,6 +227,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "19",
                     "start"     : "12:30",
                     "end"       : "13:15",
                     "hall"      : "Мраморный зал",
@@ -217,6 +238,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "20",
                     "start"     : "12:30",
                     "end"       : "14:00",
                     "hall"      : "Cupola Arena",
@@ -225,6 +247,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "21",
                     "start"     : "13:00",
                     "end"       : "16:00",
                     "hall"      : "Южный зал",
@@ -235,6 +258,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "22",
                     "start"     : "14:30",
                     "end"       : "16:00",
                     "hall"      : "Travel Arena",
@@ -245,6 +269,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "23",
                     "start"     : "13:45",
                     "end"       : "15:15",
                     "hall"      : "Мраморный зал",
@@ -255,6 +280,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "24",
                     "start"     : "14:30",
                     "end"       : "16:00",
                     "hall"      : "Cupola Arena",
@@ -263,6 +289,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "25",
                     "start"     : "16:30",
                     "end"       : "17:00",
                     "hall"      : "Южный зал",
@@ -272,6 +299,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "26",
                     "start"     : "16:00",
                     "end"       : "18:00",
                     "hall"      : "Мраморный зал",
@@ -281,6 +309,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "27",
                     "start"     : "16:40",
                     "end"       : "18:00",
                     "hall"      : "Travel Arena",
@@ -291,6 +320,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "28",
                     "start"     : "16:30",
                     "end"       : "17:00",
                     "hall"      : "Cupola Arena",
@@ -303,8 +333,10 @@
 
         {
             "date"  : "19.09",
+            "day"   : "19 сентября",
             "events" : [
                 {
+                    "id"        : "29",
                     "start"     : "10:30",
                     "end"       : "12:00",
                     "hall"      : "Travel Arena",
@@ -315,6 +347,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "30",
                     "start"     : "10:30",
                     "end"       : "14:30",
                     "hall"      : "Мраморный зал",
@@ -324,6 +357,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "31",
                     "start"     : "10:30",
                     "end"       : "12:00",
                     "hall"      : "Cupola Arena",
@@ -332,6 +366,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "32",
                     "start"     : "12:30",
                     "end"       : "16:00",
                     "hall"      : "Cupola Arena",
@@ -340,6 +375,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "33",
                     "start"     : "12:30",
                     "end"       : "14:00",
                     "hall"      : "Travel Arena",
@@ -350,6 +386,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "34",
                     "start"     : "14:30",
                     "end"       : "16:00",
                     "hall"      : "Travel Arena",
@@ -360,6 +397,7 @@
                     "link"      : "tourismexpo-05-02-program-detail.html"
                 },
                 {
+                    "id"        : "35",
                     "start"     : "15:00",
                     "end"       : "16:00",
                     "hall"      : "Мраморный зал",
