@@ -561,7 +561,7 @@ $(document).ready(function() {
 
                             newHTML +=  '<' + openTag + ' class="program-item" data-id="' + curEvent.id + '" style="top:' + curTop +'px; min-height:' + curHeight + 'px; max-height:' + curHeight + 'px; ' + bgColor + '">' +
                                             '<div class="program-item-top">' +
-                                                '<div class="program-item-time"><svg><use xlink:href="' + pathTemplate + 'images/sprite.svg#icon-time"></use></svg>' + curEvent.start + '–' + curEvent.end + '</div>' +
+                                                '<div class="program-item-time"><svg><use xlink:href="' + pathTemplate + 'images/sprite.svg#icon-time"></use></svg>' + curEvent.start + '&ndash;' + curEvent.end + '</div>' +
                                                 '<div class="title-medium">' + curEvent.title + '</div>' +
                                             '</div>';
                             if (typeof(curEvent.format) != 'undefined' || typeof(curEvent.track) != 'undefined') {
@@ -991,6 +991,8 @@ function initForm(curForm) {
     curForm.find('.form-input-date input').mask('00.00.0000');
     curForm.find('.form-input-date input').attr('autocomplete', 'off');
     curForm.find('.form-input-date input').addClass('inputDate');
+    curForm.find('.form-input-date-range input').prop('readonly', true);
+    curForm.find('.form-input-date-range input').attr('autocomplete', 'off');
 
     curForm.find('.form-input input, .form-input textarea').each(function() {
         if ($(this).val() != '') {
@@ -1189,8 +1191,38 @@ function initForm(curForm) {
         }
     });
 
+    curForm.find('.form-input-date-range input').each(function() {
+        var curInput = $(this);
+        var minDateText = curInput.attr('min');
+        var minDate = null;
+        if (typeof (minDateText) != 'undefined') {
+            var minDateArray = minDateText.split('.');
+            minDate = new Date(Number(minDateArray[2]), Number(minDateArray[1]) - 1, Number(minDateArray[0]));
+        }
+        var maxDateText = curInput.attr('max');
+        var maxDate = null;
+        if (typeof (maxDateText) != 'undefined') {
+            var maxDateArray = maxDateText.split('.');
+            maxDate = new Date(Number(maxDateArray[2]), Number(maxDateArray[1]) - 1, Number(maxDateArray[0]));
+        }
+        curInput.datepicker({
+            language: 'ru',
+            minDate: minDate,
+            maxDate: maxDate,
+            range: true,
+            multipleDatesSeparator: ' - ',
+            prevHtml: '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 3L5 8L10 13" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" /></svg>',
+            nextHtml: '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 13L10 8L5 3" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" /></svg>',
+            onSelect: function(date, formattedDate, datepicker) {
+                if (formattedDate.length == 2) {
+                    curInput.trigger('change');
+                }
+            }
+        });
+    });
+
     window.setInterval(function() {
-        $('.form-input-date input').each(function() {
+        $('.form-input-date input, .form-input-date-range input').each(function() {
             if ($(this).val() != '') {
                 $(this).parent().addClass('focus');
             }
