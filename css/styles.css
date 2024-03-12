@@ -2294,8 +2294,21 @@ a.program-item:hover {transform:translateY(-5px)}
 .slider-item {min-width:100%; max-width:100%}
 .slider-item-inner {height:100vh; min-height:500px; position:relative}
 .slider-item-bg {position:absolute; left:0; top:0; right:0; bottom:0; background:no-repeat center; background-size:cover}
-.slider-item-bg::before {content:""; position:absolute; left:0; top:0; right:0; bottom:0; background:linear-gradient(180deg, rgba(4, 14, 38, 0.6) 0%, rgba(4, 14, 38, 0) 81.82%), linear-gradient(180deg, rgba(4, 14, 38, 0) 35.73%, rgba(4, 14, 38, 0.6) 100%)}
+.slider-item-bg video {position:absolute; left:0; top:0; width:100%; height:100%; -o-object-fit:cover; object-fit:cover}
+.slider-item-bg::after {content:""; position:absolute; left:0; top:0; right:0; bottom:0; background:linear-gradient(180deg, rgba(4, 14, 38, 0.6) 0%, rgba(4, 14, 38, 0) 81.82%), linear-gradient(180deg, rgba(4, 14, 38, 0) 35.73%, rgba(4, 14, 38, 0.6) 100%)}
+.slider-item-bg-desktop {display:none; position:absolute; left:0; top:0; right:0; bottom:0; background:no-repeat center; background-size:cover}
+.slider-item-bg-desktop video {position:absolute; left:0; top:0; width:100%; height:100%; -o-object-fit:cover; object-fit:cover}
+.slider-item-bg-desktop::after {content:""; position:absolute; left:0; top:0; right:0; bottom:0; background:linear-gradient(180deg, rgba(4, 14, 38, 0.6) 0%, rgba(4, 14, 38, 0) 81.82%), linear-gradient(180deg, rgba(4, 14, 38, 0) 35.73%, rgba(4, 14, 38, 0.6) 100%)}
+.slider-item-bg-tablet {display:none; position:absolute; left:0; top:0; right:0; bottom:0; background:no-repeat center; background-size:cover}
+.slider-item-bg-tablet video {position:absolute; left:0; top:0; width:100%; height:100%; -o-object-fit:cover; object-fit:cover}
+.slider-item-bg-tablet::after {content:""; position:absolute; left:0; top:0; right:0; bottom:0; background:linear-gradient(180deg, rgba(4, 14, 38, 0.6) 0%, rgba(4, 14, 38, 0) 81.82%), linear-gradient(180deg, rgba(4, 14, 38, 0) 35.73%, rgba(4, 14, 38, 0.6) 100%)}
+.slider-item-bg-mobile {display:none; position:absolute; left:0; top:0; right:0; bottom:0; background:no-repeat center; background-size:cover}
+.slider-item-bg-mobile video {position:absolute; left:0; top:0; width:100%; height:100%; -o-object-fit:cover; object-fit:cover}
+.slider-item-bg-mobile::after {content:""; position:absolute; left:0; top:0; right:0; bottom:0; background:linear-gradient(180deg, rgba(4, 14, 38, 0.6) 0%, rgba(4, 14, 38, 0) 81.82%), linear-gradient(180deg, rgba(4, 14, 38, 0) 35.73%, rgba(4, 14, 38, 0.6) 100%)}
 .slider-item-content {position:absolute; left:0; bottom:71px; right:0; text-align:center}
+.slider-item-content-middle {bottom:50%; transform:translateY(50%)}
+.slider-item-content-left {text-align:left}
+.slider-item-content-right {text-align:right}
 .slider-item-content-video {top:0; display:flex; flex-direction:column; justify-content:flex-end}
 .slider-item-video {position:absolute; left:0; top:0; right:0; bottom:0; display:flex; align-items:center; justify-content:center}
 .slider-item-video span {display:flex; width:64px; height:64px; background:#FFFFFF; border-radius:50%; align-items:center; justify-content:center}
@@ -2303,6 +2316,8 @@ a.program-item:hover {transform:translateY(-5px)}
 .slider-item-video:hover svg {fill:#0099D2}
 .slider-item-title {font:680 80px/72px "Roboto Flex", sans-serif; letter-spacing:-0.01em; color:#FFFFFF}
 .slider-item-link {margin:40px 0 0 0; display:flex; justify-content:center}
+.slider-item-content-left .slider-item-link {justify-content:flex-start}
+.slider-item-content-right .slider-item-link {justify-content:flex-end}
 .slider-item-link .btn-border {border-color:#FFFFFF; color:#FFFFFF; min-width:400px}
 .slider-item-link .btn-border:hover {border-color:#0099D2}
 .slider-item-link .btn-border svg {stroke:#FFFFFF}
@@ -2322,7 +2337,10 @@ a.program-item:hover {transform:translateY(-5px)}
 .slider .swiper-button-next svg {display:block; width:50px; height:50px; fill:none; stroke:#FFFFFF}
 
 @media (max-width:1579px) {
+    .slider-item-bg {display:none}
+    .slider-item-bg-desktop {display:block}
     .slider-item-content {bottom:80px}
+    .slider-item-content-middle {bottom:50%}
     .slider-item-title {font-size:60px; line-height:54px}
     .slider .swiper-button-prev,
     .slider .swiper-button-next {width:40px; height:40px}
@@ -2334,7 +2352,10 @@ a.program-item:hover {transform:translateY(-5px)}
 
 @media (max-width:1219px) {
     .slider-item-inner {height:calc(100vh - 60px)}
+    .slider-item-bg-desktop {display:none}
+    .slider-item-bg-tablet {display:block}
     .slider-item-content {bottom:65px}
+    .slider-item-content-middle {bottom:50%}
     .slider-item-title {font-size:50px; line-height:45px}
     .slider-item-link {margin:32px 0 0 0}
     .slider .swiper-pagination.swiper-pagination-horizontal {left:14px; right:14px; bottom:10px}
@@ -2345,6 +2366,9 @@ a.program-item:hover {transform:translateY(-5px)}
 
 @media (max-width:767px) {
     .slider-item-content {bottom:55px}
+    .slider-item-content-middle {bottom:50%}
+    .slider-item-bg-tablet {display:none}
+    .slider-item-bg-mobile {display:block}
     .slider-item-title {font-size:30px; line-height:27px}
     .slider-item-link {margin:24px 0 0 0}
     .slider-item-link .btn-border {min-width:100%}
