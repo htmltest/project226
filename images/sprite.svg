@@ -117,6 +117,10 @@
         <path d="M11.1569 5.34315C11.1569 5.067 10.933 4.84315 10.6569 4.84315L6.15685 4.84315C5.88071 4.84315 5.65685 5.067 5.65685 5.34315C5.65685 5.61929 5.88071 5.84315 6.15685 5.84315L10.1569 5.84315L10.1569 9.84315C10.1569 10.1193 10.3807 10.3431 10.6569 10.3431C10.933 10.3431 11.1569 10.1193 11.1569 9.84315L11.1569 5.34315ZM5.35355 11.3536L11.0104 5.6967L10.3033 4.98959L4.64645 10.6464L5.35355 11.3536Z" />
     </symbol>
 
+    <symbol viewBox="0 0 16 16" id="in-link">
+        <path d="M12.1817 8.52518C12.3769 8.32992 12.3769 8.01334 12.1817 7.81808L8.9997 4.6361C8.80444 4.44083 8.48785 4.44083 8.29259 4.6361C8.09733 4.83136 8.09733 5.14794 8.29259 5.3432L11.121 8.17163L8.29259 11.0001C8.09733 11.1953 8.09733 11.5119 8.29259 11.7072C8.48785 11.9024 8.80444 11.9024 8.9997 11.7072L12.1817 8.52518ZM3.82812 8.67163H11.8281V7.67163H3.82812V8.67163Z" />
+    </symbol>
+
     <symbol viewBox="0 0 16 16" id="btn-arrow">
         <path d="M6 13L11 8L6 3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
     </symbol>
@@ -256,6 +260,19 @@
 
     <symbol viewBox="0 0 64 64" id="slider-video">
         <path d="M45.8135 31.3524C47.1468 32.1222 47.1468 34.0467 45.8135 34.8165L26.5931 45.9134C25.2598 46.6832 23.5931 45.7209 23.5931 44.1813L23.5931 21.9876C23.5931 20.448 25.2598 19.4857 26.5931 20.2555L45.8135 31.3524Z" />
+    </symbol>
+
+    <symbol viewBox="0 0 24 24" id="zoom-in">
+        <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M21.0004 20.9999L16.6504 16.6499" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M11 8V14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M8 11H14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+
+    <symbol viewBox="0 0 24 24" id="zoom-out">
+        <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M21.0004 20.9999L16.6504 16.6499" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M8 11H14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
     </symbol>
 
 </svg>

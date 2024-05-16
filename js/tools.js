@@ -969,6 +969,208 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+    $('.scheme-map').each(function() {
+
+        var schemeMapWidth = 1087;
+        var schemeMapHeight = 666;
+
+        if ($(window).width() < 1220) {
+            schemeMapWidth = 676;
+            schemeMapHeight = 425;
+        }
+
+        if ($(window).width() < 768) {
+            schemeMapWidth = 306;
+            schemeMapHeight = 196;
+        }
+
+        $('.scheme-map').data('zoom', 1);
+        $('.scheme-map-img').data('curLeft', 0);
+        $('.scheme-map-img').data('curTop', 0);
+
+        var schemeMapZoomIntensity = 0.5;
+
+        $('body').on('click', '.scheme-zoom-inc', function(e) {
+            var curZoom = Number($('.scheme-map').data('zoom'));
+
+            var curLeft = Number($('.scheme-map-img').data('curLeft'));
+            var curTop = Number($('.scheme-map-img').data('curTop'));
+
+            var mouseX = schemeMapWidth / 2;
+            var mouseY = schemeMapHeight / 2;
+
+            var scale = curZoom + schemeMapZoomIntensity;
+            curLeft += mouseX / (curZoom * scale) - mouseX / curZoom;
+            curTop += mouseY / (curZoom * scale) - mouseY / curZoom;
+
+            curZoom = curZoom + schemeMapZoomIntensity;
+            $('.scheme-map').data('zoom', curZoom);
+
+            $('.scheme-map-img').css({'transform': 'translate(' + curLeft + 'px, ' + curTop + 'px)', 'width': curZoom * schemeMapWidth, 'height': curZoom * schemeMapHeight});
+            $('.scheme-map-img').data('curLeft', curLeft);
+            $('.scheme-map-img').data('curTop', curTop);
+            e.preventDefault();
+        });
+
+        $('body').on('click', '.scheme-zoom-dec', function(e) {
+            var curZoom = Number($('.scheme-map').data('zoom'));
+
+            var curLeft = Number($('.scheme-map-img').data('curLeft'));
+            var curTop = Number($('.scheme-map-img').data('curTop'));
+
+            var mouseX = schemeMapWidth / 2;
+            var mouseY = schemeMapHeight / 2;
+
+            var scale = curZoom - schemeMapZoomIntensity;
+            if (scale < 1) {
+                scale = 1;
+            }
+            curLeft -= mouseX / (curZoom * scale) - mouseX / curZoom;
+            curTop -= mouseY / (curZoom * scale) - mouseY / curZoom;
+            if (scale == 1) {
+                curLeft = 0;
+                curTop = 0;
+            }
+
+            curZoom = curZoom - schemeMapZoomIntensity;
+            if (curZoom < 1) {
+                curZoom = 1;
+            }
+            $('.scheme-map').data('zoom', curZoom);
+
+            if (curLeft > 0) {
+                curLeft = 0;
+            }
+            if (curLeft < $('.scheme-map').width() - curZoom * schemeMapWidth) {
+                curLeft = $('.scheme-map').width() - curZoom * schemeMapWidth;
+            }
+            if (curTop > 0) {
+                curTop = 0;
+            }
+            if (curTop < $('.scheme-map').height() - curZoom * schemeMapHeight) {
+                curTop = $('.scheme-map').height() - curZoom * schemeMapHeight;
+            }
+
+            $('.scheme-map-img').css({'transform': 'translate(' + curLeft + 'px, ' + curTop + 'px)', 'width': curZoom * schemeMapWidth, 'height': curZoom * schemeMapHeight});
+            $('.scheme-map-img').data('curLeft', curLeft);
+            $('.scheme-map-img').data('curTop', curTop);
+            e.preventDefault();
+        });
+
+        var mapDrag = false;
+        var mapMove = false;
+        var mapMoveTimer = null;
+        var mapStartX = 0;
+        var mapStartY = 0;
+
+        if ($(window).width() >= 1220) {
+            $('.scheme-map').on('mousedown', function(e) {
+                if (Number($('.scheme-map').data('zoom')) > 1) {
+                    mapDrag = true;
+                    mapStartX = e.pageX;
+                    mapStartY = e.pageY;
+                }
+            });
+
+            $('.scheme-map').on('mousemove', function(e) {
+                if (mapDrag) {
+                    mapMove = true;
+                    var curLeft = Number($('.scheme-map-img').data('curLeft'));
+                    var curTop = Number($('.scheme-map-img').data('curTop'));
+                    var curDiffX = e.pageX;
+                    var curDiffY = e.pageY;
+                    curDiffX = curDiffX - mapStartX;
+                    curDiffY = curDiffY - mapStartY;
+                    curLeft += curDiffX;
+                    if (curLeft > 0) {
+                        curLeft = 0;
+                    }
+                    var curZoom = Number($('.scheme-map').data('zoom'));
+                    if (curLeft < $('.scheme-map').width() - curZoom * schemeMapWidth) {
+                        curLeft = $('.scheme-map').width() - curZoom * schemeMapWidth;
+                    }
+                    curTop += curDiffY;
+                    if (curTop > 0) {
+                        curTop = 0;
+                    }
+                    if (curTop < $('.scheme-map').height() - curZoom * schemeMapHeight) {
+                        curTop = $('.scheme-map').height() - curZoom * schemeMapHeight;
+                    }
+                    mapStartX = e.pageX;
+                    mapStartY = e.pageY;
+                    $('.scheme-map-img').css({'transform': 'translate(' + curLeft + 'px, ' + curTop + 'px)'});
+                    $('.scheme-map-img').data('curLeft', curLeft);
+                    $('.scheme-map-img').data('curTop', curTop);
+                }
+            });
+
+            $(document).on('mouseup', function(e) {
+                mapDrag = false;
+                if (mapMove) {
+                    window.clearTimeout(mapMoveTimer);
+                    mapMoveTimer = null;
+                    mapMoveTimer = window.setTimeout(function() {
+                        mapMove = false;
+                    }, 100);
+                }
+            });
+        } else {
+            $('.scheme-map').on('touchstart', function(e) {
+                mapDrag = true;
+                mapStartX = e.originalEvent.touches[0].pageX;
+                mapStartY = e.originalEvent.touches[0].pageY;
+            });
+
+            $('.scheme-map').on('touchmove', function(e) {
+                if (mapDrag) {
+                    var curLeft = Number($('.scheme-map-img').data('curLeft'));
+                    var curTop = Number($('.scheme-map-img').data('curTop'));
+                    var curDiffX = e.originalEvent.touches[0].pageX;
+                    var curDiffY = e.originalEvent.touches[0].pageY;
+                    curDiffX = curDiffX - mapStartX;
+                    curDiffY = curDiffY - mapStartY;
+                    curLeft += curDiffX;
+                    if (curLeft > 0) {
+                        curLeft = 0;
+                    }
+                    var curZoom = Number($('.scheme-map').data('zoom'));
+                    if (curLeft < $('.scheme-map').width() - curZoom * schemeMapWidth) {
+                        curLeft = $('.scheme-map').width() - curZoom * schemeMapWidth;
+                    }
+                    curTop += curDiffY;
+                    if (curTop > 0) {
+                        curTop = 0;
+                    }
+                    if (curTop < $('.scheme-map').height() - curZoom * schemeMapHeight) {
+                        curTop = $('.scheme-map').height() - curZoom * schemeMapHeight;
+                    }
+                    mapStartX = e.originalEvent.touches[0].pageX;
+                    mapStartY = e.originalEvent.touches[0].pageY;
+                    $('.scheme-map-img').css({'transform': 'translate(' + curLeft + 'px, ' + curTop + 'px)'});
+                    $('.scheme-map-img').data('curLeft', curLeft);
+                    $('.scheme-map-img').data('curTop', curTop);
+                }
+                e.preventDefault();
+            });
+
+            $(document).on('touchend', function(e) {
+                mapDrag = false;
+            });
+        }
+    });
+
+    $('.participation-stat-list').each(function() {
+        var curSlider = $(this);
+        var swiper = new Swiper(curSlider[0], {
+            loop: true,
+            touchAngle: 30,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+    });
+
 });
 
 $.fn.datepicker.language['ru'] =  {

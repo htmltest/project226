@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Flex:opsz,wdth,wght@8..144,120,680&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/styles.css?sid=003">
         <link rel="stylesheet" href="js/swiper/swiper-bundle.min.css" />
         <link rel="stylesheet" href="js/air-datepicker/datepicker.css">
         <link rel="stylesheet" href="js/select2/select2.css">
@@ -48,9 +48,10 @@
                 <header>
                     <div class="container">
                         <div class="header-container">
-                            <div class="logo">
+                            <div class="logo logo-30">
                                 <a href="#">
                                     <img src="images/logo.svg" alt="">
+                                    <div class="logo-30-img"><img src="images/logo-30.svg" alt=""></div>
                                     <svg><use xlink:href="images/sprite.svg#logo-title"></use></svg>
                                 </a>
                             </div>
@@ -75,10 +76,11 @@
                             <nav class="nav">
                                 <ul>
                                     <li>
-                                        <a href="#">Выставка<svg><use xlink:href="images/sprite.svg#nav-arrow"></use></svg></a>
+                                        <a href="#">О выставке<svg><use xlink:href="images/sprite.svg#nav-arrow"></use></svg></a>
                                         <ul>
                                             <li><a href="#">О выставке</a></li>
-                                            <li><a href="#">Площадка</a></li>
+                                            <li><a href="#">Дата и место проведения</a></li>
+                                            <li><a href="#">Тематические разделы</a></li>
                                             <li><a href="#">Online-каталог</a></li>
                                             <li><a href="#">Архив</a></li>
                                             <li><a href="#">Контакты</a></li>
@@ -87,9 +89,11 @@
                                     <li>
                                         <a href="#">Участникам<svg><use xlink:href="images/sprite.svg#nav-arrow"></use></svg></a>
                                         <ul>
-                                            <li><a href="#">Участие в выставке</a></li>
+                                            <li><a href="#">Преимущества участия</a></li>
+                                            <li><a href="#">Заявка на участие<svg><use xlink:href="images/sprite.svg#in-link"></use></svg></a></li>
                                             <li><a href="#">Руководство участника</a></li>
-                                            <li><a href="#">Партнерам</a></li>
+                                            <li><a href="#">Партнерские и рекламные пакеты</a></li>
+                                            <li><a href="#">Компенсация затрат</a></li>
                                             <li><a href="#">Стенды</a></li>
                                             <li><a href="#">Туристические сервисы</a></li>
                                             <li><a href="#">F.A.Q.</a></li>
@@ -98,11 +102,8 @@
                                     <li>
                                         <a href="#">Посетителям<svg><use xlink:href="images/sprite.svg#nav-arrow"></use></svg></a>
                                         <ul>
-                                            <li><a href="#">Гид посетителя</a></li>
-                                            <li><a href="#">Регистрация посетителя<svg><use xlink:href="images/sprite.svg#ext-link"></use></svg></a></li>
-                                            <li><a href="#">Туристические сервисы</a></li>
-                                            <li><a href="#">Аккредитация прессы<svg><use xlink:href="images/sprite.svg#ext-link"></use></svg></a></li>
-                                            <li><a href="#">F.A.Q.</a></li>
+                                            <li><a href="#">Преимущества посещения</a></li>
+                                            <li><a href="#">Регистрация посетителя<svg><use xlink:href="images/sprite.svg#in-link"></use></svg></a></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -110,14 +111,15 @@
                                         <ul>
                                             <li><a href="#">Программа мероприятий</a></li>
                                             <li><a href="#">Спикеры</a></li>
-                                            <li><a href="#">Мероприятия экспонентов</a></li>
+                                            <li><a href="#">Фестивальная программа</a></li>
+                                            <li><a href="#">Презентации</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <a href="#">Медиа<svg><use xlink:href="images/sprite.svg#nav-arrow"></use></svg></a>
                                         <ul>
                                             <li><a href="#">Новости</a></li>
-                                            <li><a href="#">Аккредитация прессы<svg><use xlink:href="images/sprite.svg#ext-link"></use></svg></a></li>
+                                            <li><a href="#">Аккредитация СМИ<svg><use xlink:href="images/sprite.svg#in-link"></use></svg></a></li>
                                             <li><a href="#">Фото и видео</a></li>
                                             <li><a href="#">Медиаматериалы</a></li>
                                         </ul>
@@ -128,12 +130,11 @@
                             <div class="header-place">
                                 <div class="header-place-item"><svg><use xlink:href="images/sprite.svg#icon-date"></use></svg>17&ndash;19 сентября 2024 года</div>
                                 <div class="header-place-item"><svg><use xlink:href="images/sprite.svg#icon-location"></use></svg>Москва, ЦВК «Экспоцентр»</div>
-                                <div class="header-place-item"><svg><use xlink:href="images/sprite.svg#icon-time"></use></svg>17&ndash;18&nbsp;сентября&nbsp;&mdash; с&nbsp;10:00 до&nbsp;18:00, 19&nbsp;сентября&nbsp;&mdash; с&nbsp;10:00 до&nbsp;16:00</div>
                             </div>
 
                             <div class="header-btns">
                                 <a href="#" class="btn btn-small btn-border"><span>Посетить выставку<svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg></span></a>
-                                <a href="windows/order.html" class="btn btn-small window-link"><span>Стать экспонентом<svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg></span></a>
+                                <a href="#" class="btn btn-small"><span>Стать экспонентом<svg><use xlink:href="images/sprite.svg#btn-arrow"></use></svg></span></a>
                             </div>
                         </div>
                     </div>
@@ -388,10 +389,11 @@
                         <div class="footer-menu">
                             <ul>
                                 <li>
-                                    <a href="#">Выставка</a>
+                                    <a href="#">О выставке</a>
                                     <ul>
                                         <li><a href="#">О выставке</a></li>
-                                        <li><a href="#">Площадка</a></li>
+                                        <li><a href="#">Дата и место проведения</a></li>
+                                        <li><a href="#">Тематические разделы</a></li>
                                         <li><a href="#">Online-каталог</a></li>
                                         <li><a href="#">Архив</a></li>
                                         <li><a href="#">Контакты</a></li>
@@ -400,9 +402,11 @@
                                 <li>
                                     <a href="#">Участникам</a>
                                     <ul>
-                                        <li><a href="#">Участие в выставке</a></li>
+                                        <li><a href="#">Преимущества участия</a></li>
+                                        <li><a href="#">Заявка на участие<svg><use xlink:href="images/sprite.svg#in-link"></use></svg></a></li>
                                         <li><a href="#">Руководство участника</a></li>
-                                        <li><a href="#">Партнерам</a></li>
+                                        <li><a href="#">Партнерские и рекламные пакеты</a></li>
+                                        <li><a href="#">Компенсация затрат</a></li>
                                         <li><a href="#">Стенды</a></li>
                                         <li><a href="#">Туристические сервисы</a></li>
                                         <li><a href="#">F.A.Q.</a></li>
@@ -411,11 +415,8 @@
                                 <li>
                                     <a href="#">Посетителям</a>
                                     <ul>
-                                        <li><a href="#">Гид посетителя</a></li>
-                                        <li><a href="#">Регистрация посетителя<svg><use xlink:href="images/sprite.svg#ext-link"></use></svg></a></li>
-                                        <li><a href="#">Туристические сервисы</a></li>
-                                        <li><a href="#">Аккредитация прессы<svg><use xlink:href="images/sprite.svg#ext-link"></use></svg></a></li>
-                                        <li><a href="#">F.A.Q.</a></li>
+                                        <li><a href="#">Преимущества посещения</a></li>
+                                        <li><a href="#">Регистрация посетителя<svg><use xlink:href="images/sprite.svg#in-link"></use></svg></a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -423,14 +424,15 @@
                                     <ul>
                                         <li><a href="#">Программа мероприятий</a></li>
                                         <li><a href="#">Спикеры</a></li>
-                                        <li><a href="#">Мероприятия экспонентов</a></li>
+                                        <li><a href="#">Фестивальная программа</a></li>
+                                        <li><a href="#">Презентации</a></li>
                                     </ul>
                                 </li>
-                                <li class="active">
+                                <li>
                                     <a href="#">Медиа</a>
                                     <ul>
-                                        <li class="active"><a href="#">Новости</a></li>
-                                        <li><a href="#">Аккредитация прессы<svg><use xlink:href="images/sprite.svg#ext-link"></use></svg></a></li>
+                                        <li><a href="#">Новости</a></li>
+                                        <li><a href="#">Аккредитация СМИ<svg><use xlink:href="images/sprite.svg#in-link"></use></svg></a></li>
                                         <li><a href="#">Фото и видео</a></li>
                                         <li><a href="#">Медиаматериалы</a></li>
                                     </ul>
@@ -461,7 +463,7 @@
         <script src="js/select2/select2.min.js"></script>
         <script src="js/select2/ru.js"></script>
         <script src="js/jquery.cookie.js"></script>
-        <script src="js/tools.js"></script>
+        <script src="js/tools.js?sid=003"></script>
 
     </body>
 </html>
