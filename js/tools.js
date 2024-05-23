@@ -394,20 +394,18 @@ $(document).ready(function() {
 
         $('body').on('click', '.program-filter-hall', function() {
             var curItem = $(this);
-            if (!curItem.hasClass('active')) {
-                $('.program-filter-hall.active').removeClass('active');
-                curItem.addClass('active');
-                $('.program-filter-halls-select-value').html(curItem.html());
+            $('.program-filter-hall.active').removeClass('active');
+            curItem.addClass('active');
+            $('.program-filter-halls-select-value').html(curItem.html());
 
-                $('.program-hall.active').removeClass('active');
-                var activeHall = curItem.html();
-                $('.program-hall').each(function() {
-                    var curHall = $(this);
-                    if (curHall.find('> .title-small').html() == activeHall) {
-                        curHall.addClass('active');
-                    }
-                });
-            }
+            $('.program-hall.active').removeClass('active');
+            var activeHall = curItem.html();
+            $('.program-hall').each(function() {
+                var curHall = $(this);
+                if (curHall.find('> .title-small').html() == activeHall) {
+                    curHall.addClass('active');
+                }
+            });
             $('.program-filter-halls-select').removeClass('open');
         });
 
@@ -458,21 +456,12 @@ $(document).ready(function() {
             });
         });
 
-        $('body').on('click', '.program-item-favourite', function() {
-            var curItem = $(this).parents().filter('.program-item');
-            $(this).toggleClass('active');
-            if ($(this).hasClass('active')) {
-                $.cookie('program-item-favourite-' + curItem.attr('data-id'), 'true', {expires: 365});
-            } else {
-                $.removeCookie('program-item-favourite-' + curItem.attr('data-id'));
-            }
-            return false;
-        });
-
         function updateProgram() {
             $('.program').addClass('loading');
 
-            var newHTML =   '<div class="program-container">';
+            var newHTML =   '<div class="program-wrapper swiper">' +
+                                '<div class="program-wrapper-inner swiper-wrapper">' +
+                                    '<div class="program-container swiper-slide">';
 
             var curDate = $('.program-filter-date.active').html();
             var curEvents = null;
@@ -534,9 +523,9 @@ $(document).ready(function() {
                             var endHour = Number(curEvent.end.split(':')[0]);
                             var endMinutes = Number(curEvent.end.split(':')[1]);
 
-                            var curTop = (startHour - minHour) * heightHour + startMinutes / 60 * heightHour + (startHour - minHour) + 1;
+                            var curTop = (startHour - minHour) * heightHour + startMinutes / 60 * heightHour + (startHour - minHour) + 2;
 
-                            var curHeight = ((endHour + endMinutes / 60) - (startHour + startMinutes / 60)) * heightHour;
+                            var curHeight = ((endHour + endMinutes / 60) - (startHour + startMinutes / 60)) * heightHour - 3;
 
                             var curColor = null;
                             for (var c = 0; c < colorsData.length; c++) {
@@ -588,15 +577,77 @@ $(document).ready(function() {
                 newHTML +=      '</div>';
             }
 
-            newHTML +=      '</div>';
+            newHTML +=              '</div>' +
+                                '</div>' +
+                                '<div class="swiper-scrollbar"></div>' +
+                            '</div>';
 
             $('.program').html(newHTML);
+            if ($('.program-hall').length == 4) {
+                $('.program-container').addClass('program-container-4');
+            }
+
+            $('.program-wrapper').each(function() {
+                var curSlider = $(this);
+                var swiper = new Swiper(curSlider[0], {
+                    slidesPerView: 'auto',
+                    freeMode: true,
+                    watchSlidesProgress: true,
+                    scrollbar: {
+                        el: '.swiper-scrollbar',
+                    }
+                });
+            });
+
             $('.program-filter-hall').eq(0).trigger('click');
             $('.program').removeClass('loading');
         }
     });
 
+    $('body').on('click', '.program-item-favourite', function() {
+        var curItem = $(this).parents().filter('.program-item');
+        $(this).toggleClass('active');
+        if ($(this).hasClass('active')) {
+            $.cookie('program-item-favourite-' + curItem.attr('data-id'), 'true', {expires: 365});
+        } else {
+            $.removeCookie('program-item-favourite-' + curItem.attr('data-id'));
+        }
+        return false;
+    });
+
+    $('.event-others-cards .program-item').each(function() {
+        var curItem = $(this);
+        var curID = curItem.attr('data-id');
+        if (typeof $.cookie('program-item-favourite-' + curID) != 'undefined' && $.cookie('program-item-favourite-' + curID) == 'true') {
+            curItem.find('.program-item-favourite').addClass('active');
+        }
+    });
+
+    $('.event-others-list').each(function() {
+        var curSlider = $(this);
+        var swiper = new Swiper(curSlider[0], {
+            slidesPerView: 'auto',
+            freeMode: true,
+            watchSlidesProgress: true,
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            }
+        });
+    });
+
     $('.participation-events-list').each(function() {
+        var curSlider = $(this);
+        var swiper = new Swiper(curSlider[0], {
+            slidesPerView: 'auto',
+            freeMode: true,
+            watchSlidesProgress: true,
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            }
+        });
+    });
+
+    $('.presentations').each(function() {
         var curSlider = $(this);
         var swiper = new Swiper(curSlider[0], {
             slidesPerView: 'auto',
@@ -1003,6 +1054,10 @@ $(document).ready(function() {
             curLeft += mouseX / (curZoom * scale) - mouseX / curZoom;
             curTop += mouseY / (curZoom * scale) - mouseY / curZoom;
 
+            if (scale > 1) {
+                $('.scheme-zoom-dec').removeClass('disabled');
+            }
+
             curZoom = curZoom + schemeMapZoomIntensity;
             $('.scheme-map').data('zoom', curZoom);
 
@@ -1024,6 +1079,9 @@ $(document).ready(function() {
             var scale = curZoom - schemeMapZoomIntensity;
             if (scale < 1) {
                 scale = 1;
+            }
+            if (scale == 1) {
+                $('.scheme-zoom-dec').addClass('disabled');
             }
             curLeft -= mouseX / (curZoom * scale) - mouseX / curZoom;
             curTop -= mouseY / (curZoom * scale) - mouseY / curZoom;
@@ -1412,7 +1470,7 @@ function initForm(curForm) {
             minDate: minDate,
             maxDate: maxDate,
             range: true,
-            multipleDatesSeparator: ' - ',
+            multipleDatesSeparator: ' – ',
             prevHtml: '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 3L5 8L10 13" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" /></svg>',
             nextHtml: '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 13L10 8L5 3" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" /></svg>',
             onSelect: function(date, formattedDate, datepicker) {

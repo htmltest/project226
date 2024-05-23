@@ -48,7 +48,7 @@
                     "format"    : "Пленарная сессия",
                     "color"     : "1",
                     "track"     : ["Код будущего"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "03",
@@ -58,7 +58,7 @@
                     "title"     : "Турпроект.Отдых.Перезагрузка.",
                     "format"    : "Всероссийский молодежный образовательный марафон",
                     "track"     : ["Человеческий капитал и&nbsp;карьера в&nbsp;туризме"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "04",
@@ -69,7 +69,7 @@
                     "format"    : "ТехТрек. Презентационная сессия",
                     "color"     : "2",
                     "track"     : ["Технологии и&nbsp;данные"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "05",
@@ -78,7 +78,7 @@
                     "hall"      : "Cupola Arena",
                     "title"     : "Чат с Министром",
                     "track"     : ["Код будущего"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "06",
@@ -89,7 +89,7 @@
                     "format"    : "Презентационная сессия",
                     "color"     : "2",
                     "track"     : ["Философия путешествий", "Тренды сезона осень-зима 2023/2024"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "07",
@@ -100,7 +100,7 @@
                     "format"    : "Стратегическая сессия",
                     "color"     : "3",
                     "track"     : ["Креативность. Хаб идей", "Код будущего", "Философия путешествий"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "08",
@@ -111,18 +111,18 @@
                     "format"    : "ТехТрек. Панельная дискуссия с&nbsp;участниками рынка",
                     "color"     : "4",
                     "track"     : ["Технологии и&nbsp;данные"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "09",
                     "start"     : "15:30",
                     "end"       : "17:00",
                     "hall"      : "Travel Arena",
-                    "title"     : "Студенческие проекты в&nbsp;реализации нацпроекта &laquo;Туризм и&nbsp;индустрия гостеприимства&raquo;: поддержка развития&quot;",
+                    "title"     : "Студенческие проекты в&nbsp;реализации нацпроекта &laquo;Туризм и&nbsp;индустрия гостеприимства&raquo;: поддержка развития",
                     "format"    : "Открытый диалог",
                     "color"     : "5",
                     "track"     : ["Человеческий капитал и&nbsp;карьера в&nbsp;туризме"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "10",
@@ -133,7 +133,7 @@
                     "format"    : "Панельная дискуссия",
                     "color"     : "4",
                     "track"     : ["Код будущего", "Технологии и&nbsp;данные", "Креативность. Хаб идей"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "11",
@@ -144,7 +144,7 @@
                     "format"    : "ТехТрек. Кейс-сессия",
                     "color"     : "3",
                     "track"     : ["Технологии и&nbsp;данные"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 }
             ]
         },
@@ -162,7 +162,7 @@
                     "format"    : "Презентационная сессия",
                     "color"     : "2",
                     "track"     : ["Философия путешествий", "Тренды сезона осень-зима 2023/2024"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "13",
@@ -171,7 +171,7 @@
                     "hall"      : "Travel Arena",
                     "title"     : "OTDYKH Travel Technology Conference – 1 часть",
                     "track"     : ["Технологии и&nbsp;данные"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "14",
@@ -182,7 +182,7 @@
                     "format"    : "Панельная дискуссия",
                     "color"     : "4",
                     "track"     : ["Код будущего"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "15",
@@ -193,7 +193,7 @@
                     "format"    : "Панельная дискуссия",
                     "color"     : "4",
                     "track"     : ["Философия путешествий"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "16",
@@ -204,7 +204,7 @@
                     "format"    : "Презентационная сессия",
                     "color"     : "2",
                     "track"     : ["Философия путешествий", "Тренды сезона осень-зима 2023/2024"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "17",
@@ -215,7 +215,7 @@
                     "format"    : "Презентационная сессия",
                     "color"     : "2",
                     "track"     : ["Философия путешествий", "Тренды сезона осень-зима 2023/2024"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "18",
@@ -224,7 +224,7 @@
                     "hall"      : "Travel Arena",
                     "title"     : "OTDYKH Travel Technology Conference – 2 часть",
                     "track"     : ["Технологии и&nbsp;данные"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "19",
@@ -235,7 +235,7 @@
                     "format"    : "Презентационная сессия",
                     "color"     : "2",
                     "track"     : ["Философия путешествий", "Тренды сезона осень-зима 2023/2024"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "20",
@@ -244,7 +244,7 @@
                     "hall"      : "Cupola Arena",
                     "title"     : "Образовательный интенсив 1 часть",
                     "track"     : ["Образовательный интенсив для турагента"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "21",
@@ -255,7 +255,7 @@
                     "format"    : "Презентационная сессия",
                     "color"     : "2",
                     "track"     : ["Философия путешествий", "Тренды сезона осень-зима 2023/2024"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "22",
@@ -266,7 +266,7 @@
                     "format"    : "Кейс-сессия туристических агентств",
                     "color"     : "3",
                     "track"     : ["Код будущего"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "23",
@@ -277,7 +277,7 @@
                     "format"    : "Панельная дискуссия",
                     "color"     : "4",
                     "track"     : ["Технологии и&nbsp;данные"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "24",
@@ -286,7 +286,7 @@
                     "hall"      : "Cupola Arena",
                     "title"     : "Образовательный интенсив 2 часть",
                     "track"     : ["Образовательный интенсив для турагента"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "25",
@@ -296,7 +296,7 @@
                     "title"     : "Петербург. Петр. От&nbsp;первого камня до&nbsp;небоскреба",
                     "color"     : "2",
                     "format"    : "Презентация маршрута",
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "26",
@@ -306,7 +306,7 @@
                     "title"     : "Презентационная сессия Кузбасса &laquo;Зима Наша&raquo;",
                     "color"     : "2",
                     "track"     : ["Философия путешествий", "Тренды сезона осень-зима 2023/2024"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "27",
@@ -317,7 +317,7 @@
                     "format"    : "Дискуссионная панель",
                     "color"     : "5",
                     "track"     : ["Философия путешествий", "Тренды сезона осень-зима 2023/2024"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "28",
@@ -326,7 +326,7 @@
                     "hall"      : "Cupola Arena",
                     "title"     : "Образовательный интенсив 3 часть",
                     "track"     : ["Образовательный интенсив для турагента"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 }
             ]
         },
@@ -344,7 +344,7 @@
                     "format"    : "Форсайт-сессия",
                     "color"     : "2",
                     "track"     : ["Философия путешествий", "Маркетинг и&nbsp;дистрибуция для VIP-клиентов"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "30",
@@ -354,7 +354,7 @@
                     "title"     : "ОТДЫХ Лаб. Креативный турпродукт",
                     "format"    : "Второй ежегодный проект",
                     "track"     : ["Креативность. Хаб идей"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "31",
@@ -363,7 +363,7 @@
                     "hall"      : "Cupola Arena",
                     "title"     : "ОТДЫХ.Инновации&nbsp;&mdash; 1&nbsp;часть",
                     "track"     : ["Философия путешествий"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "32",
@@ -372,7 +372,7 @@
                     "hall"      : "Cupola Arena",
                     "title"     : "ОТДЫХ.Инновации&nbsp;&mdash; 2&nbsp;часть",
                     "track"     : ["Философия путешествий"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "33",
@@ -383,7 +383,7 @@
                     "format"    : "Практическая дискуссия",
                     "color"     : "5",
                     "track"     : ["Код будущего"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "34",
@@ -394,7 +394,7 @@
                     "format"    : "Панельная дискуссия",
                     "color"     : "4",
                     "track"     : ["Философия путешествий"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 },
                 {
                     "id"        : "35",
@@ -405,7 +405,7 @@
                     "format"    : "Круглый стол",
                     "color"     : "5",
                     "track"     : ["Философия путешествий"],
-                    "link"      : "tourismexpo-05-02-program-detail.html"
+                    "link"      : "tourismexpo-05-02-event-detail.html"
                 }
             ]
         }
