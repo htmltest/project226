@@ -1474,9 +1474,7 @@ function initForm(curForm) {
             prevHtml: '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 3L5 8L10 13" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" /></svg>',
             nextHtml: '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 13L10 8L5 3" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" /></svg>',
             onSelect: function(date, formattedDate, datepicker) {
-                if (formattedDate.length == 2) {
-                    curInput.trigger('change');
-                }
+                curInput.trigger('change');
             }
         });
     });
