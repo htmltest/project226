@@ -1228,6 +1228,16 @@ $(document).ready(function() {
             }
         });
     });
+    
+    $('.event-detail').each(function() {
+        var curBlock = $(this);
+        if (curBlock.find('.event-detail-info-group').length == 3) {
+            curBlock.addClass('three-quarters');
+        }
+        if (curBlock.find('.event-detail-info-group').length == 2) {
+            curBlock.addClass('half');
+        }
+    });
 
 });
 

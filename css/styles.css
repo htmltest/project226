@@ -2038,23 +2038,37 @@ a.program-item:hover {transform:translateY(-5px)}
 
 .event-detail {position:relative; margin:60px 0 0 0; padding:40px; color:#1E1E22; background:linear-gradient(0deg, rgba(162, 217, 247, 0.2) 0%, rgba(101, 192, 236, 0.2) 59%, rgba(57, 175, 229, 0.2) 100%); border-radius:4px}
 .event-detail-inner {max-width:1140px; margin:0 auto}
-.event-detail-info {display:flex; margin:0 -30px}
+.event-detail-info {display:flex; margin:0 -30px; justify-content:center}
 .event-detail-info-group {min-width:25%; max-width:25%; padding:0 30px}
 .event-detail-info-group .title-large {margin:0 0 16px 0}
 .event-detail-info-group .body-large {margin:8px 0 0 0}
-.event-detail-download {margin:40px 0 0 0}
+.event-detail-download {margin:40px 0 0 0; display:flex; justify-content:center}
 .event-detail-download .btn {width:100%}
 .event-detail-download .btn svg {width:20px; height:20px; margin:0 8px 0 0}
+
+.event-detail.three-quarters {margin-left:auto; margin-right:auto; padding-left:200px; padding-right:200px; max-width:1015px}
+.event-detail.three-quarters .event-detail-info-group {min-width:33.33%; max-width:33.33%}
+
+.event-detail.half {margin-left:auto; margin-right:auto; padding-left:200px; padding-right:200px; max-width:730px}
+.event-detail.half .event-detail-info-group {min-width:50%; max-width:50%}
 
 @media (max-width:1579px) {
     .event-detail-info {margin:0 -20px}
     .event-detail-info-group {padding:0 20px}
+
+    .event-detail.three-quarters {padding-left:40px; padding-right:40px; max-width:935px}
+    .event-detail.half {padding-left:40px; padding-right:40px; max-width:650px}
 }
 
 @media (max-width:1219px) {
     .event-detail {padding:40px 30px}
-    .event-detail-info {margin:0 -20px -40px -20px; flex-wrap:wrap}
+    .event-detail-info {margin:0 -20px -40px -20px; flex-wrap:wrap; justify-content:flex-start}
     .event-detail-info-group {min-width:50%; max-width:50%; padding:0 20px 40px 20px}
+
+    .event-detail.three-quarters {margin-left:0; margin-right:0; padding-left:30px; padding-right:30px; max-width:none}
+    .event-detail.three-quarters .event-detail-info-group {min-width:50%; max-width:50%}
+
+    .event-detail.half {margin-left:0; margin-right:0; padding-left:30px; padding-right:30px; max-width:none}
 }
 
 @media (max-width:767px) {
@@ -2063,6 +2077,12 @@ a.program-item:hover {transform:translateY(-5px)}
     .event-detail-info-group {margin:32px 0 0 0; min-width:0; max-width:none; padding:0}
     .event-detail-info-group:first-child {margin:0}
     .event-detail-download {margin:32px 0 0 0}
+
+    .event-detail.three-quarters {padding-left:24px; padding-right:24px}
+    .event-detail.three-quarters .event-detail-info-group {min-width:0; max-width:none}
+
+    .event-detail.half {padding-left:24px; padding-right:24px}
+    .event-detail.half .event-detail-info-group {min-width:0; max-width:none}
 }
 
 .event-detail-text {margin:60px 0 0 0; font-size:18px; line-height:25px; color:#1E1E22}
