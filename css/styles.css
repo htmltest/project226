@@ -2046,18 +2046,18 @@ a.program-item:hover {transform:translateY(-5px)}
 .event-detail-download .btn {width:100%}
 .event-detail-download .btn svg {width:20px; height:20px; margin:0 8px 0 0}
 
-.event-detail.three-quarters {margin-left:auto; margin-right:auto; padding-left:200px; padding-right:200px; max-width:1015px}
+.event-detail.three-quarters {margin-left:auto; margin-right:auto; padding-left:200px; padding-right:200px; max-width:1240px}
 .event-detail.three-quarters .event-detail-info-group {min-width:33.33%; max-width:33.33%}
 
-.event-detail.half {margin-left:auto; margin-right:auto; padding-left:200px; padding-right:200px; max-width:730px}
+.event-detail.half {margin-left:auto; margin-right:auto; padding-left:200px; padding-right:200px; max-width:940px}
 .event-detail.half .event-detail-info-group {min-width:50%; max-width:50%}
 
 @media (max-width:1579px) {
     .event-detail-info {margin:0 -20px}
     .event-detail-info-group {padding:0 20px}
 
-    .event-detail.three-quarters {padding-left:40px; padding-right:40px; max-width:935px}
-    .event-detail.half {padding-left:40px; padding-right:40px; max-width:650px}
+    .event-detail.three-quarters {padding-left:40px; padding-right:40px; max-width:895px}
+    .event-detail.half {padding-left:40px; padding-right:40px; max-width:610px}
 }
 
 @media (max-width:1219px) {
