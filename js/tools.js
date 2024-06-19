@@ -888,25 +888,6 @@ $(document).ready(function() {
         });
     });
 
-    $('.about-digits-list').each(function() {
-        var maxTime = 750;
-
-        $('.about-digits-item').each(function() {
-            var curItem = $(this);
-            curItem.find('.about-digits-item-value span').html(0);
-
-            var maxValue = Number(curItem.find('.about-digits-item-value').attr('data-value'));
-            var curPeriod = 10;
-            var curOffset = Math.ceil(maxValue / (maxTime / curPeriod))
-            if (maxValue / (maxTime / curPeriod) < 1) {
-                curOffset = 1;
-                curPeriod = Math.ceil(maxTime / maxValue);
-            }
-            curItem.attr('data-period', curPeriod);
-            curItem.attr('data-offset', curOffset);
-        });
-    });
-
     var isPageClick = false;
 
     $('.filter-form form').each(function() {
@@ -1716,34 +1697,6 @@ $(window).on('load resize scroll', function() {
             curBlock.addClass('animated');
         } else {
             curBlock.removeClass('animated');
-        }
-    });
-
-    $('.about-digits-item').each(function() {
-        var curItem = $(this);
-        if (windowScroll + windowHeight > curItem.offset().top) {
-            if (!curItem.hasClass('animated')) {
-                curItem.addClass('animated');
-
-                var curTimer = null;
-                var curPeriod = Number(curItem.attr('data-period'));
-                var curOffset = Number(curItem.attr('data-offset'));
-                var curMax = Number(curItem.find('.about-digits-item-value').attr('data-value'));
-
-                function updateValue() {
-                   var curValue = Number(curItem.find('.about-digits-item-value span').html());
-                   curValue += curOffset;
-                   if (curValue > curMax) {
-                       curValue = curMax;
-                   }
-                   curItem.find('.about-digits-item-value span').html(curValue);
-                   if (curValue < curMax) {
-                       curTimer = window.setTimeout(updateValue, curPeriod);
-                   }
-                }
-
-                curTimer = window.setTimeout(updateValue, curPeriod);
-            }
         }
     });
 
