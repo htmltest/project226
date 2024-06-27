@@ -304,6 +304,7 @@ $(document).ready(function() {
     $('.program').each(function() {
         var colorsData = null;
         var programData = null;
+        var listHalls = null;
 
         $('.program').addClass('loading');
         $.ajax({
@@ -317,19 +318,15 @@ $(document).ready(function() {
         }).done(function(data) {
             colorsData = data.colors;
             programData = data.data;
+            listHalls = data.halls;
 
             var htmlDates = '';
-            var listHalls = [];
             var listTracks = [];
             var listFormats = [];
             for (var i = 0; i < programData.length; i++) {
                 htmlDates += '<div class="program-filter-date" data-day="' + programData[i].day + '">' + programData[i].date + '</div>';
                 for (var j = 0; j < programData[i].events.length; j++) {
                     var curEvent = programData[i].events[j];
-                    var curHall = curEvent.hall;
-                    if (listHalls.indexOf(curHall) == -1) {
-                        listHalls.push(curHall);
-                    }
                     if (typeof(curEvent.track) != 'undefined') {
                         var eventTracks = curEvent.track;
                         for (var k = 0; k < eventTracks.length; k++) {
@@ -501,12 +498,7 @@ $(document).ready(function() {
 
                 newHTML +=      '<div class="program-halls">';
 
-                var curHalls = [];
-                for (var i = 0; i < curEvents.length; i++) {
-                    if (curHalls.indexOf(curEvents[i].hall) == -1) {
-                        curHalls.push(curEvents[i].hall);
-                    }
-                }
+                var curHalls = listHalls;
 
                 var heightHour = 221;
 
@@ -1228,7 +1220,7 @@ $(document).ready(function() {
             }
         });
     });
-    
+
     $('.event-detail').each(function() {
         var curBlock = $(this);
         if (curBlock.find('.event-detail-info-group').length == 3) {

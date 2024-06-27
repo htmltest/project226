@@ -27,6 +27,12 @@
         }
     ],
 
+    "halls" : [
+        "Panorama hall",
+        "Travel arena",
+        "Talent Stage"
+    ],
+
     "data"  : [
         {
             "date"  : "17.09",
