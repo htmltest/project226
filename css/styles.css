@@ -2328,7 +2328,7 @@ a.program-item:hover {transform:translateY(-5px)}
 .speaker-detail .back-link {position:absolute; left:777px; top:0; margin:0; z-index:1}
 .speaker-detail-photo {min-width:626px; max-width:626px}
 .speaker-detail-photo img {display:block; width:100%}
-.speaker-detail-content {margin:56px 0 0 151px}
+.speaker-detail-content {margin:56px 0 0 151px; width:100%}
 .speaker-detail-content h3 {margin:0}
 .speaker-detail-text {margin:8px 0 0 0; color:#65646A; max-width:579px}
 .speaker-detail-text *:first-child {margin-top:0}
