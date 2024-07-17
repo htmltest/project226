@@ -3301,3 +3301,36 @@ a.program-item:hover {transform:translateY(-5px)}
     .program-subscribe+.presentations,
     .program-subscribe+.presentations.swiper {margin-top:80px}
 }
+
+.spikers {margin:120px 0 160px 0; position:relative}
+.spikers-list .swiper-wrapper {display:flex}
+.spikers-list .swiper-slide {width:100%}
+.spikers-list .swiper-slide img {display:block; width:100%; border-radius:4px}
+.spikers-list .swiper-slide img:nth-child(2) {display:none}
+.spikers-ctrl {margin:16px 0 0 0; display:flex; align-items:center; justify-content:center}
+.spikers-ctrl .swiper-pagination.swiper-pagination-horizontal {display:flex; position:relative; margin:0 14px; width:auto; left:auto; top:auto; right:auto; bottom:auto; align-items:center; justify-content:center}
+.spikers-ctrl .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet {display:block; min-width:40px; height:4px; background:rgba(0, 174, 239, 0.2); opacity:1; margin:0 6px; border-radius:2px; cursor:pointer; position:relative}
+.spikers-ctrl .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet::before {content:""; position:absolute; left:0; top:-10px; right:0; bottom:-10px}
+.spikers-ctrl .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet-active {background:#00AEEF}
+.spikers-ctrl .swiper-button-prev,
+.spikers-ctrl .swiper-button-next {position:relative; top:auto; left:auto; right:auto; width:16px; height:16px; border:none; border-radius:0; margin:0; padding:0; outline:none; -webkit-appearance:none; cursor:pointer; background:transparent; transform:none; opacity:1}
+.spikers-ctrl .swiper-button-prev::after,
+.spikers-ctrl .swiper-button-next::after {display:none}
+.spikers-ctrl .swiper-button-disabled {opacity:1}
+.spikers-ctrl .swiper-button-prev svg,
+.spikers-ctrl .swiper-button-next svg {display:block; width:16px; height:16px; fill:#00AEEF; transition:fill 0.2s}
+.spikers-ctrl .swiper-button-prev:hover svg,
+.spikers-ctrl .swiper-button-next:hover svg {fill:#0099D2}
+.spikers-ctrl .swiper-button-prev.swiper-button-disabled svg,
+.spikers-ctrl .swiper-button-next.swiper-button-disabled svg {fill:#CCEFFC}
+
+@media (max-width:1219px) {
+    .spikers {margin:80px 0}
+    .spikers-list .swiper-slide img:nth-child(1) {display:none}
+    .spikers-list .swiper-slide img:nth-child(2) {display:block}
+    .spikers-ctrl {margin:20px 0 0 0; display:block}
+    .spikers-ctrl .swiper-pagination.swiper-pagination-horizontal {margin:0 -4px}
+    .spikers-ctrl .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet {min-width:0; max-width:none; flex-grow:1; margin:0 4px}
+    .spikers-ctrl .swiper-button-prev,
+    .spikers-ctrl .swiper-button-next {display:none}
+}

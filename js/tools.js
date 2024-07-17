@@ -1231,6 +1231,22 @@ $(document).ready(function() {
         }
     });
 
+    $('.spikers-list').each(function() {
+        var curSlider = $(this);
+        var swiper = new Swiper(curSlider[0], {
+            loop: false,
+            touchAngle: 30,
+            navigation: {
+                nextEl: $('.spikers-ctrl .swiper-button-next')[0],
+                prevEl: $('.spikers-ctrl .swiper-button-prev')[0],
+            },
+            pagination: {
+                el: $('.spikers-ctrl .swiper-pagination')[0],
+                clickable: true
+            }
+        });
+    });
+
 });
 
 $.fn.datepicker.language['ru'] =  {

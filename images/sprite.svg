@@ -275,4 +275,12 @@
         <path d="M8 11H14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
     </symbol>
 
+    <symbol viewBox="0 0 16 16" id="spikers-prev">
+        <path d="M7.36937 7.99939L10.436 11.0661L9.73354 11.7686L5.96437 7.99939L9.73354 4.23022L10.436 4.93272L7.36937 7.99939Z" />
+    </symbol>
+
+    <symbol viewBox="0 0 16 16" id="spikers-next">
+        <path d="M8.63063 8.00061L5.56396 4.93395L6.26646 4.23145L10.0356 8.00061L6.26646 11.7698L5.56396 11.0673L8.63063 8.00061Z" />
+    </symbol>
+
 </svg>
