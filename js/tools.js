@@ -1234,7 +1234,10 @@ $(document).ready(function() {
     $('.spikers-list').each(function() {
         var curSlider = $(this);
         var swiper = new Swiper(curSlider[0], {
-            loop: false,
+            loop: true,
+            autoplay: {
+                delay: 6000,
+            },
             touchAngle: 30,
             navigation: {
                 nextEl: $('.spikers-ctrl .swiper-button-next')[0],
