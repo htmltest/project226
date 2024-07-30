@@ -3334,3 +3334,22 @@ a.program-item:hover {transform:translateY(-5px)}
     .spikers-ctrl .swiper-button-prev,
     .spikers-ctrl .swiper-button-next {display:none}
 }
+
+.window-notification-container {display:none}
+.window-notification {width:800px; padding:32px; text-align:center}
+.window-notification-logo {background:url(../images/window-notification.png) no-repeat; background-size:100%}
+.window-notification-logo img {display:block; width:100%}
+.window-notification-info {margin:10px 0 0 0; display:flex; align-items:center; justify-content:space-between; text-transform:uppercase; font:680 30px/40px "Roboto Flex", sans-serif; font-stretch:25; font-variation-settings: "GRAD" -200, "slnt" 0, "XTRA" 468, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738, "opsz" 14}
+.window-notification-info-date {color:#C73484}
+.window-notification-info-sep {min-width:5px; max-width:5px; height:5px; background:#C73484; border-radius:50%}
+.window-notification-info-place {color:#2778B7}
+.window-notification-text {margin:40px 0 0 0; font-weight:600; font-size:24px; line-height:34px; color:#636363}
+
+@media (max-width:1219px) {
+    .window-notification {width:335px; padding:24px}
+    .window-notification-info {display:block; margin:10px 0 0 0; font-size:23px; line-height:31px}
+    .window-notification-info-place {margin:10px 0 0 0}
+    .window-notification-info-sep {display:none}
+    .window-notification-text {margin:20px auto 0 auto; font-size:20px; line-height:28px}
+    .window-notification-text br {display:none}
+}

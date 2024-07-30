@@ -1787,3 +1787,48 @@ $(window).on('load resize scroll', function() {
     });
 
 });
+
+$(document).ready(function() {
+    if ($('.window-notification-container').length == 1) {
+        if (typeof $.cookie('is-notification') == 'undefined' || $.cookie('is-notification') == 'false') {
+            window.setTimeout(function() {
+                if ($('.window').length == 0) {
+                    var curWidth = $(window).width();
+                    if (curWidth < 375) {
+                        curWidth = 375;
+                    }
+                    var curScroll = $(window).scrollTop();
+                    var curPadding = $('.wrapper').width();
+                    $('html').addClass('window-open');
+                    $('meta[name="viewport"]').attr('content', 'width=' + curWidth);
+                    curPadding = $('.wrapper').width() - curPadding;
+                    $('body').css({'margin-right': curPadding + 'px'});
+                    $('html').data('scrollTop', curScroll);
+                    $('.wrapper').css({'top': -curScroll});
+
+                    $('body').append('<div class="window"><div class="window-loading"></div></div>')
+
+                    $('.wrapper').css({'top': -curScroll});
+                    $('.wrapper').data('curScroll', curScroll);
+                } else {
+                    $('.window').append('<div class="window-loading"></div>')
+                    $('.window-container').addClass('window-container-preload');
+                }
+
+                var newHTML = $('.window-notification-container').html();
+
+                if ($('.window-container').length == 0) {
+                    $('.window').html('<div class="window-container window-container-preload">' + newHTML + '<a href="#" class="window-close"><svg><use xlink:href="' + pathTemplate + 'images/sprite.svg#window-close"></use></svg></a></div>');
+                } else {
+                    $('.window-container').html(newHTML + '<a href="#" class="window-close"><svg><use xlink:href="' + pathTemplate + 'images/sprite.svg#window-close"></use></svg></a>');
+                    $('.window .window-loading').remove();
+                }
+
+                window.setTimeout(function() {
+                    $('.window-container-preload').removeClass('window-container-preload');
+                }, 100);
+                $.cookie('is-notification', 'true', {expires: 365});
+            }, 6000);
+        }
+    }
+});
