@@ -174,6 +174,9 @@ $(document).ready(function() {
                 },
                 1220: {
                     slidesPerView: 3
+                },
+                1580: {
+                    slidesPerView: 4
                 }
             }
         });
