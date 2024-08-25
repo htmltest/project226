@@ -583,14 +583,17 @@ header.header-up {transform:translateY(-100%)}
     .nav > ul > li > ul > li > a {display:block; padding:9px 20px}
 }
 
-.header-place {position:absolute; left:0; top:0; height:39px; display:flex; align-items:center; font-size:12px; line-height:17px; color:#1E1E22}
+.header-place {position:absolute; left:0; top:0; height:39px; display:flex; align-items:center; font-size:12px; line-height:17px; color:#1E1E22; transition:color 0.2s}
 .header-place-item {display:flex; align-items:center; margin:0 0 0 24px}
 .header-place-item:first-child {margin:0}
 .header-place-item svg {display:block; min-width:16px; max-width:16px; height:16px; fill:none; stroke:#00AEEF; margin:0 4px 0 0}
+.header-place-item a {color:#1E1E22; text-decoration:none}
 
 @media (min-width:1220px) {
     .page-main .header-place {color:#FFFFFF}
     .page-main header.fixed .header-place {color:#1E1E22}
+    .header-place-item a {color:#FFFFFF}
+    .page-main header.fixed .header-place-item a {color:#1E1E22}
 }
 
 @media (max-width:1219px) {
