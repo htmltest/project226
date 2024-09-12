@@ -592,7 +592,7 @@ header.header-up {transform:translateY(-100%)}
 @media (min-width:1220px) {
     .page-main .header-place {color:#FFFFFF}
     .page-main header.fixed .header-place {color:#1E1E22}
-    .header-place-item a {color:#FFFFFF}
+    .page-main .header-place-item a {color:#FFFFFF}
     .page-main header.fixed .header-place-item a {color:#1E1E22}
 }
 
