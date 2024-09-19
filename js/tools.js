@@ -323,10 +323,14 @@ $(document).ready(function() {
             programData = data.data;
             listHalls = data.halls;
 
+            var curDay = '';
             var htmlDates = '';
             var listTracks = [];
             var listFormats = [];
             for (var i = 0; i < programData.length; i++) {
+                if (typeof(programData[i].active) != 'undefined' && programData[i].active) {
+                    curDay = programData[i].date;
+                }
                 htmlDates += '<div class="program-filter-date" data-day="' + programData[i].day + '">' + programData[i].date + '</div>';
                 for (var j = 0; j < programData[i].events.length; j++) {
                     var curEvent = programData[i].events[j];
@@ -348,7 +352,36 @@ $(document).ready(function() {
                 }
             }
             $('.program-filter-dates-select-list').html(htmlDates);
-            $('.program-filter-date').eq(0).trigger('click');
+            var vars = window.location.search.substring(1).split('&');
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split('=');
+                if (decodeURIComponent(pair[0]) == 'day') {
+                    curDay = decodeURIComponent(pair[1]);
+                }
+            }
+            var today = new Date();
+			var todayMonth = ('0' + (today.getMonth() + 1)).slice(-2);
+			var todayDay = ('0' + today.getDate()).slice(-2);
+            var todayLink = $('.program-filter-date:contains("' + todayDay + '.' + todayMonth + '")');
+
+            if (curDay == '') {
+                if (todayLink.length == 1) {
+                    todayLink.trigger('click');
+                } else {
+                    $('.program-filter-date').eq(0).trigger('click');
+                }
+            } else {
+                var curLink = $('.program-filter-date:contains("' + curDay + '")');
+                if (curLink.length == 1) {
+                    curLink.trigger('click');
+                } else {
+                    if (todayLink.length == 1) {
+                        todayLink.trigger('click');
+                    } else {
+                        $('.program-filter-date').eq(0).trigger('click');
+                    }
+                }
+            }
 
             var htmlHalls = '';
             for (var i = 0; i < listHalls.length; i++) {
