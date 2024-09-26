@@ -628,6 +628,7 @@ $(document).ready(function() {
             });
 
             $('.program-filter-hall').eq(0).trigger('click');
+            $('.program-filter-tracks select, .program-filter-formats select').trigger('change');
             $('.program').removeClass('loading');
         }
     });
