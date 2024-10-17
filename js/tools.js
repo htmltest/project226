@@ -720,7 +720,7 @@ $(document).ready(function() {
 
         for (var i = 0; i < galleryLength; i++) {
             var curGalleryItem = curGallery.eq(i);
-            windowHTML +=               '<div class="window-photo-preview-list-item swiper-slide"><a href="#" style="background-image:url(' + curGalleryItem.find('img').attr('src') + ')"></a></div>';
+            windowHTML +=               '<div class="window-photo-preview-list-item swiper-slide"><a href="#" style="background-image:url(\'' + curGalleryItem.find('img').attr('src') + '\')"></a></div>';
         }
         windowHTML +=               '</div>' +
                                     '<div class="swiper-scrollbar"></div>' +
@@ -1868,4 +1868,11 @@ $(document).ready(function() {
             }, 6000);
         }
     }
+
+    var $grid = $('.archive-photos-list').masonry({
+        itemSelector: '.archive-photos-item',
+        gutter: 0,
+        percentPosition: true
+    });
+
 });
