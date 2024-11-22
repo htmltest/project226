@@ -1085,24 +1085,7 @@ header.header-up {transform:translateY(-100%)}
     .archive-photos-list-2 .archive-photos-item:nth-child(7n) a {height:183px}
 }
 
-.archive-videos {margin:-16px auto 0 auto; max-width:1020px}
-.archive-videos h1 {margin:0; text-align:center}
-.archive-videos-list {margin:60px 0 0 0}
-.archive-videos-item {margin:60px 0 0 0}
-.archive-videos-item-player {position:relative; padding:56.25% 0 0 0}
-.archive-videos-item-player iframe,
-.archive-videos-item-player video {position:absolute; left:0; top:0; width:100%; height:100%}
-.archive-videos-item .title-large {margin:16px 0 0 0}
-
-@media (max-width:1579px) {
-    .archive-videos {max-width:980px}
-}
-
-@media (max-width:767px) {
-    .archive-videos {margin:16px 0 0 0}
-    .archive-videos-list {margin:30px 0 0 0}
-    .archive-videos-item {margin:30px 0 0 0}
-}
+.archive-videos h1 {text-align:center}
 
 .archive-reviews {margin:-16px auto 0 auto; max-width:1020px}
 .archive-reviews h1 {margin:0; text-align:center}
@@ -3368,4 +3351,25 @@ a.program-item:hover {transform:translateY(-5px)}
     .window-notification-info-sep {display:none}
     .window-notification-text {margin:20px auto 0 auto; font-size:20px; line-height:28px}
     .window-notification-text br {display:none}
+}
+
+.window-video-open,
+.window-video-open body {overflow:hidden; position:fixed; left:0; top:0; right:0; bottom:0}
+
+.window-video {position:fixed; left:0; top:0; right:0; bottom:0; z-index:9999; background:rgba(0, 0, 0, 0.6); backdrop-filter:blur(8px); user-select:none}
+
+.window-video-close {position:absolute; right:16px; top:16px; z-index:99}
+.window-video-close svg {isplay:block; fill:none; stroke:#FFFFFF; transition:stroke 0.2s; width:24px; height:24px}
+.window-video-close:hover svg {stroke:#00AEEF}
+
+@media (max-width:767px) {
+    .window-video-close {top:14px}
+}
+
+.window-video-player {position:absolute; left:56px; top:56px; right:56px; bottom:56px}
+.window-video-player iframe,
+.window-video-player video {display:block; position:absolute; left:0; top:0; width:100%; height:100%}
+
+@media (max-width:1219px) {
+    .window-video-player {left:50%; top:50%; width:90vw; right:auto; bottom:auto; height:50.625vw; transform:translate(-50%, -50%)}
 }
