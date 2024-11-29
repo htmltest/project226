@@ -1337,6 +1337,20 @@ $(document).ready(function() {
         }
     });
 
+    $('.videos-group').each(function() {
+        var curBlock = $(this);
+        if (curBlock.find('.videos-group-item').length > 4) {
+            curBlock.find('.videos-group-more').addClass('visible');
+        }
+    });
+
+    $('.videos-group-more a').click(function(e) {
+        var curBlock = $(this).parents().filter('.videos-group');
+        curBlock.toggleClass('open');
+        curBlock.find('.videos-group-item:gt(7)').slideToggle();
+        e.preventDefault();
+    });
+
 });
 
 $.fn.datepicker.language['ru'] =  {
